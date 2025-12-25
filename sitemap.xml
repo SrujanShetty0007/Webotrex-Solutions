@@ -1,70 +1,39 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
-        xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
-  
-  <!-- Homepage -->
-  <url>
-    <loc>https://webotrex.com/</loc>
-    <lastmod>2025-12-19</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
-  </url>
-
-  <!-- About Section -->
-  <url>
-    <loc>https://webotrex.com/#about</loc>
-    <lastmod>2025-12-19</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <!-- Services Section -->
-  <url>
-    <loc>https://webotrex.com/#services</loc>
-    <lastmod>2025-12-19</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-
-  <!-- Contact Section -->
-  <url>
-    <loc>https://webotrex.com/#contact</loc>
-    <lastmod>2025-12-19</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <!-- Individual Service Pages (Future) -->
-  <!-- Uncomment when service pages are created -->
-  <!--
-  <url>
-    <loc>https://webotrex.com/services/website-development</loc>
-    <lastmod>2025-12-19</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <url>
-    <loc>https://webotrex.com/services/web-design</loc>
-    <lastmod>2025-12-19</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <url>
-    <loc>https://webotrex.com/services/social-media-management</loc>
-    <lastmod>2025-12-19</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <url>
-    <loc>https://webotrex.com/services/software-solutions</loc>
-    <lastmod>2025-12-19</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  -->
-
-</urlset>
+\u003c?xml version="1.0" encoding="UTF-8"?\u003e
+\u003curlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"\u003e
+    \u003curl\u003e
+        \u003cloc\u003ehttps://webotrex.com/\u003c/loc\u003e
+        \u003clastmod\u003e2025-01-01\u003c/lastmod\u003e
+        \u003cchangefreq\u003eweekly\u003c/changefreq\u003e
+        \u003cpriority\u003e1.0\u003c/priority\u003e
+    \u003c/url\u003e
+    \u003curl\u003e
+        \u003cloc\u003ehttps://webotrex.com/about.html\u003c/loc\u003e
+        \u003clastmod\u003e2025-01-01\u003c/lastmod\u003e
+        \u003cchangefreq\u003emonthly\u003c/changefreq\u003e
+        \u003cpriority\u003e0.8\u003c/priority\u003e
+    \u003c/url\u003e
+    \u003curl\u003e
+        \u003cloc\u003ehttps://webotrex.com/web-development.html\u003c/loc\u003e
+        \u003clastmod\u003e2025-01-01\u003c/lastmod\u003e
+        \u003cchangefreq\u003emonthly\u003c/changefreq\u003e
+        \u003cpriority\u003e0.9\u003c/priority\u003e
+    \u003c/url\u003e
+    \u003curl\u003e
+        \u003cloc\u003ehttps://webotrex.com/contact.html\u003c/loc\u003e
+        \u003clastmod\u003e2025-01-01\u003c/lastmod\u003e
+        \u003cchangefreq\u003emonthly\u003c/changefreq\u003e
+        \u003cpriority\u003e0.7\u003c/priority\u003e
+    \u003c/url\u003e
+    \u003curl\u003e
+        \u003cloc\u003ehttps://webotrex.com/privacy-policy.html\u003c/loc\u003e
+        \u003clastmod\u003e2025-01-01\u003c/lastmod\u003e
+        \u003cchangefreq\u003eyearly\u003c/changefreq\u003e
+        \u003cpriority\u003e0.3\u003c/priority\u003e
+    \u003c/url\u003e
+    \u003curl\u003e
+        \u003cloc\u003ehttps://webotrex.com/terms-of-service.html\u003c/loc\u003e
+        \u003clastmod\u003e2025-01-01\u003c/lastmod\u003e
+        \u003cchangefreq\u003eyearly\u003c/changefreq\u003e
+        \u003cpriority\u003e0.3\u003c/priority\u003e
+    \u003c/url\u003e
+\u003c/urlset\u003e

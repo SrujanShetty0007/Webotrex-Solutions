@@ -1,0 +1,578 @@
+/* ======================
+   Web Development Page Styles
+   ====================== */
+
+/* Hero styles are in shared-hero.css */
+
+/* Services Section */
+.services-section {
+    padding: 6rem 0;
+    background: white;
+}
+
+.section-header {
+    text-align: center;
+    margin-bottom: 4rem;
+    position: relative;
+    z-index: 2;
+}
+
+.section-title {
+    font-size: 2.25rem;
+    font-weight: 900;
+    color: #0f172a;
+    margin-bottom: 1rem;
+    letter-spacing: 0.05em;
+}
+
+.section-description {
+    color: #64748b;
+    font-size: 1.0625rem;
+    max-width: 42rem;
+    margin: 0 auto;
+    line-height: 1.7;
+}
+
+.text-brand {
+    color: #059669;
+}
+
+/* Service Block - Alternating Layout */
+.service-block {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 3rem;
+    align-items: center;
+    margin-bottom: 4rem;
+}
+
+.service-block:last-child {
+    margin-bottom: 0;
+}
+
+/* Large Service Card */
+.service-card-large {
+    padding: 2rem;
+    border-radius: 1.25rem;
+    color: white;
+    min-height: 220px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.service-card-large:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.18);
+}
+
+/* Card Color Variants */
+.card-red {
+    background: linear-gradient(135deg, #dc2626 0%, #b91c1c 100%);
+}
+
+.card-blue {
+    background: linear-gradient(135deg, #3b82f6 0%, #6366f1 100%);
+}
+
+.card-orange {
+    background: linear-gradient(135deg, #f97316 0%, #ea580c 100%);
+}
+
+.card-purple {
+    background: linear-gradient(135deg, #8b5cf6 0%, #6d28d9 100%);
+}
+
+.card-cyan {
+    background: linear-gradient(135deg, #06b6d4 0%, #0284c7 100%);
+}
+
+.card-gradient {
+    background: linear-gradient(135deg, #8b5cf6 0%, #6366f1 50%, #3b82f6 100%);
+}
+
+.card-green {
+    background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+}
+
+.card-icon {
+    width: 3rem;
+    height: 3rem;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 0.75rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+    backdrop-filter: blur(4px);
+    flex-shrink: 0;
+}
+
+.card-icon svg {
+    width: 1.5rem;
+    height: 1.5rem;
+    color: white;
+}
+
+.card-title {
+    font-size: 1.375rem;
+    font-weight: 700;
+    margin-bottom: 0.75rem;
+    color: white;
+    line-height: 1.3;
+}
+
+.card-text {
+    font-size: 0.9375rem;
+    color: rgba(255, 255, 255, 0.9);
+    line-height: 1.6;
+    margin-top: auto;
+}
+
+/* Service Description */
+.service-description {
+    padding: 1rem 0;
+}
+
+.desc-title {
+    font-size: 1.75rem;
+    font-weight: 800;
+    color: #0f172a;
+    margin-bottom: 1rem;
+}
+
+.desc-text {
+    font-size: 0.9375rem;
+    color: #64748b;
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+}
+
+.learn-more {
+    display: inline-flex;
+    align-items: center;
+    font-size: 0.9375rem;
+    font-weight: 600;
+    color: #0f172a;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.learn-more:hover {
+    color: #059669;
+    gap: 0.5rem;
+}
+
+/* Tech Stack Section */
+.tech-section {
+    padding: 6rem 0;
+    background: #f8fafc;
+}
+
+.tech-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2.5rem 3rem;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.tech-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.75rem;
+    transition: all 0.3s ease;
+}
+
+.tech-item:hover {
+    transform: translateY(-4px);
+}
+
+.tech-icon {
+    width: 3.5rem;
+    height: 3.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tech-icon svg {
+    width: 3rem;
+    height: 3rem;
+}
+
+.tech-item span {
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: #334155;
+}
+
+/* Process Section - Enhanced Modern Design */
+.process-section {
+    padding: 6rem 0;
+    background: linear-gradient(180deg, #f8fafc 0%, #ffffff 50%, #f8fafc 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+.process-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background:
+        radial-gradient(circle at 10% 20%, rgba(5, 150, 105, 0.06) 0%, transparent 40%),
+        radial-gradient(circle at 90% 80%, rgba(16, 185, 129, 0.06) 0%, transparent 40%);
+}
+
+.process-timeline {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem 0;
+}
+
+/* Vertical Timeline Line */
+.timeline-line {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    bottom: 0;
+    width: 3px;
+    background: linear-gradient(180deg,
+            rgba(5, 150, 105, 0) 0%,
+            rgba(5, 150, 105, 0.3) 10%,
+            rgba(16, 185, 129, 0.5) 50%,
+            rgba(5, 150, 105, 0.3) 90%,
+            rgba(5, 150, 105, 0) 100%);
+    transform: translateX(-50%);
+    border-radius: 4px;
+}
+
+/* Process Step Card */
+.process-step {
+    display: flex;
+    align-items: flex-start;
+    gap: 2rem;
+    margin-bottom: 3rem;
+    position: relative;
+    z-index: 2;
+}
+
+.process-step:last-child {
+    margin-bottom: 0;
+}
+
+.process-step:nth-child(odd) {
+    flex-direction: row;
+    text-align: left;
+}
+
+.process-step:nth-child(even) {
+    flex-direction: row-reverse;
+    text-align: right;
+}
+
+/* Step Icon Wrapper */
+.step-icon-wrapper {
+    flex-shrink: 0;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.step-icon {
+    width: 4rem;
+    height: 4rem;
+    background: linear-gradient(135deg, #059669 0%, #10b981 100%);
+    border-radius: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 8px 25px rgba(5, 150, 105, 0.3);
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+}
+
+.step-icon::before {
+    content: '';
+    position: absolute;
+    inset: -3px;
+    border-radius: 1.15rem;
+    background: linear-gradient(135deg, rgba(5, 150, 105, 0.2), rgba(16, 185, 129, 0.1));
+    z-index: -1;
+}
+
+.step-icon svg {
+    width: 1.75rem;
+    height: 1.75rem;
+    color: white;
+}
+
+.process-step:hover .step-icon {
+    transform: scale(1.1) rotate(-5deg);
+    box-shadow: 0 12px 35px rgba(5, 150, 105, 0.4);
+}
+
+.step-number {
+    font-size: 0.75rem;
+    font-weight: 800;
+    color: #059669;
+    background: rgba(5, 150, 105, 0.1);
+    padding: 0.25rem 0.75rem;
+    border-radius: 1rem;
+    letter-spacing: 0.05em;
+}
+
+/* Step Content */
+.step-content {
+    flex: 1;
+    background: white;
+    padding: 1.75rem 2rem;
+    border-radius: 1.25rem;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+    border: 1px solid rgba(5, 150, 105, 0.08);
+    transition: all 0.4s ease;
+    position: relative;
+}
+
+.step-content::before {
+    content: '';
+    position: absolute;
+    top: 1.5rem;
+    width: 12px;
+    height: 12px;
+    background: white;
+    border: 1px solid rgba(5, 150, 105, 0.08);
+    transform: rotate(45deg);
+}
+
+.process-step:nth-child(odd) .step-content::before {
+    left: -7px;
+    border-right: none;
+    border-top: none;
+}
+
+.process-step:nth-child(even) .step-content::before {
+    right: -7px;
+    border-left: none;
+    border-bottom: none;
+}
+
+.process-step:hover .step-content {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.1);
+    border-color: rgba(5, 150, 105, 0.2);
+}
+
+.step-title {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #0f172a;
+    margin-bottom: 0.5rem;
+}
+
+.step-text {
+    color: #64748b;
+    line-height: 1.7;
+    font-size: 0.9375rem;
+    margin: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 767px) {
+    .timeline-line {
+        left: 2rem;
+    }
+
+    .process-step,
+    .process-step:nth-child(odd),
+    .process-step:nth-child(even) {
+        flex-direction: column;
+        text-align: left;
+        padding-left: 5rem;
+    }
+
+    .step-icon-wrapper {
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+
+    .step-content::before,
+    .process-step:nth-child(odd) .step-content::before,
+    .process-step:nth-child(even) .step-content::before {
+        display: none;
+    }
+
+    .step-icon {
+        width: 3.5rem;
+        height: 3.5rem;
+    }
+
+    .step-icon svg {
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+}
+
+/* CTA Section */
+.cta-section {
+    background: linear-gradient(135deg, #059669 0%, #047857 100%);
+    color: white;
+    padding: 6rem 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.cta-bg-shapes {
+    position: absolute;
+    inset: 0;
+    opacity: 0.1;
+}
+
+.shape {
+    position: absolute;
+    border-radius: 50%;
+    background-color: white;
+    filter: blur(64px);
+}
+
+.shape-1 {
+    top: -100px;
+    left: -100px;
+    width: 300px;
+    height: 300px;
+}
+
+.shape-2 {
+    bottom: -100px;
+    right: -100px;
+    width: 350px;
+    height: 350px;
+    background-color: #10b981;
+}
+
+.cta-content {
+    position: relative;
+    z-index: 10;
+    text-align: center;
+}
+
+.cta-title {
+    font-size: 2.5rem;
+    font-weight: 900;
+    line-height: 1.2;
+    margin-bottom: 1.25rem;
+}
+
+.cta-description {
+    font-size: 1.125rem;
+    color: rgba(255, 255, 255, 0.9);
+    max-width: 36rem;
+    margin: 0 auto 2.5rem;
+    line-height: 1.7;
+}
+
+.cta-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+/* Buttons */
+.btn-white {
+    background-color: white;
+    color: #059669;
+    font-weight: 700;
+    padding: 1rem 2rem;
+    border-radius: 0.75rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    transition: all 0.3s ease;
+}
+
+.btn-white:hover {
+    background-color: #f8fafc;
+    transform: translateY(-2px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+}
+
+.btn-accent-outline {
+    background-color: rgba(16, 185, 129, 0.2);
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    color: white;
+    font-weight: 600;
+    padding: 1rem 2rem;
+    border-radius: 0.75rem;
+    backdrop-filter: blur(4px);
+    transition: all 0.3s ease;
+}
+
+.btn-accent-outline:hover {
+    background-color: rgba(16, 185, 129, 0.3);
+}
+
+/* Responsive Design */
+@media (min-width: 768px) {
+    .section-title {
+        font-size: 2.75rem;
+    }
+
+    .service-block {
+        grid-template-columns: 1fr 1.2fr;
+        gap: 4rem;
+    }
+
+    .service-block.reverse {
+        grid-template-columns: 1.2fr 1fr;
+    }
+
+    .service-block.reverse .service-card-large {
+        order: 2;
+    }
+
+    .service-block.reverse .service-description {
+        order: 1;
+    }
+
+    .service-card-large {
+        min-height: 240px;
+    }
+
+    .cta-buttons {
+        flex-direction: row;
+    }
+}
+
+@media (min-width: 1024px) {
+    .service-card-large {
+        padding: 2.5rem;
+        min-height: 260px;
+    }
+
+    .cta-title {
+        font-size: 3rem;
+    }
+}
+
+@media (max-width: 767px) {
+    .service-block.reverse .service-card-large {
+        order: 1;
+    }
+
+    .service-block.reverse .service-description {
+        order: 2;
+    }
+}

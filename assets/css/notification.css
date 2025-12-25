@@ -1,0 +1,121 @@
+/* Bottom Notification Toast */
+.notification-toast {
+    position: fixed;
+    bottom: -200px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: white;
+    padding: 1.5rem 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15), 0 0 0 1px rgba(0, 0, 0, 0.05);
+    z-index: 9999;
+    max-width: 500px;
+    width: calc(100% - 2rem);
+    transition: bottom 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.notification-toast.show {
+    bottom: 2rem;
+}
+
+.notification-content {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.notification-icon {
+    width: 2.5rem;
+    height: 2.5rem;
+    background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+    border-radius: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.notification-icon svg {
+    width: 1.5rem;
+    height: 1.5rem;
+    color: white;
+}
+
+.notification-text {
+    flex: 1;
+}
+
+.notification-title {
+    font-size: 1.0625rem;
+    font-weight: 700;
+    color: #0f172a;
+    margin-bottom: 0.25rem;
+}
+
+.notification-message {
+    font-size: 0.9375rem;
+    color: #64748b;
+    line-height: 1.5;
+}
+
+.notification-close {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background: none;
+    border: none;
+    color: #94a3b8;
+    cursor: pointer;
+    padding: 0.25rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: color 0.2s;
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.notification-close:hover {
+    color: #475569;
+}
+
+.notification-close svg {
+    width: 1.25rem;
+    height: 1.25rem;
+}
+
+/* Success variant (green) */
+.notification-toast.success .notification-icon {
+    background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+}
+
+/* Error variant (red) */
+.notification-toast.error .notification-icon {
+    background: linear-gradient(135deg, #ef4444 0%, #dc2626 100%);
+}
+
+/* Info variant (blue) */
+.notification-toast.info .notification-icon {
+    background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%);
+}
+
+/* Mobile responsive */
+@media (max-width: 640px) {
+    .notification-toast {
+        bottom: -200px;
+        width: calc(100% - 2rem);
+        padding: 1.25rem 1.5rem;
+    }
+
+    .notification-toast.show {
+        bottom: 1rem;
+    }
+
+    .notification-title {
+        font-size: 1rem;
+    }
+
+    .notification-message {
+        font-size: 0.875rem;
+    }
+}

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -8,534 +8,566 @@
     <meta name="description"
         content="Learn about Webotrex - a professional web design and development agency based in Kundapura, Udupi. We create custom HTML websites, software solutions, and digital marketing services for local businesses.">
 
+    <!-- Favicons -->
+    <link rel="icon" type="image/png" href="assets/images/favicon-webotrex.png">
+    <link rel="apple-touch-icon" href="assets/images/favicon-webotrex.png">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/about.css">
+    <link rel="stylesheet" href="assets/css/shared-hero.css">
+    <link rel="stylesheet" href="assets/css/about-premium.css">
+    <link rel="stylesheet" href="assets/css/premium-sections.css">
+
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
-<body class="bg-white">
-    <!-- Header -->
-    <header class="sticky top-0 z-50 bg-white border-b border-slate-100">
-        <nav class="container mx-auto px-6 py-4 flex items-center justify-between">
-            <a href="index.html" class="flex items-center">
-                <img src="assets/images/Webotrex-logo-transparent.png" alt="Webotrex Logo" class="h-10">
+<body>
+
+    <header class="header">
+        <nav class="nav-container">
+            <a href="index.html" class="logo-link">
+                <img src="assets/images/Webotrex-logo-transparent.png" alt="Webotrex Logo" class="logo">
+                <span class="logo-text">Webotrex</span>
             </a>
 
-            <div class="hidden lg:flex items-center space-x-8">
-                <a href="index.html"
-                    class="text-sm font-medium text-slate-700 hover:text-brand-green transition-colors">Home</a>
-                <a href="#about"
-                    class="text-sm font-medium text-slate-700 hover:text-brand-green transition-colors">About</a>
-                <div class="relative group">
-                    <button
-                        class="flex items-center text-sm font-medium text-slate-700 hover:text-brand-green transition-colors">
+            <div class="nav-menu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About</a>
+                <div class="dropdown">
+                    <button class="dropdown-btn">
                         Services
-                        <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <svg class="dropdown-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7">
                             </path>
                         </svg>
                     </button>
-                    <div
-                        class="absolute left-0 mt-2 w-56 bg-white border border-slate-100 rounded-2xl shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300">
-                        <div class="p-2">
-                            <a href="index.html#services"
-                                class="block px-4 py-3 text-sm rounded-xl hover:bg-emerald-50 hover:text-emerald-700 transition-colors">Website
-                                Development</a>
-                            <a href="index.html#services"
-                                class="block px-4 py-3 text-sm rounded-xl hover:bg-emerald-50 hover:text-emerald-700 transition-colors">Website
-                                Design</a>
-                            <a href="index.html#services"
-                                class="block px-4 py-3 text-sm rounded-xl hover:bg-emerald-50 hover:text-emerald-700 transition-colors">UI/UX
-                                Design</a>
-                            <a href="index.html#services"
-                                class="block px-4 py-3 text-sm rounded-xl hover:bg-emerald-50 hover:text-emerald-700 transition-colors">E-Commerce</a>
-                            <a href="index.html#services"
-                                class="block px-4 py-3 text-sm rounded-xl hover:bg-emerald-50 hover:text-emerald-700 transition-colors">SEO
-                                Services</a>
-                        </div>
+                    <div class="dropdown-menu">
+                        <a href="web-development.html" class="dropdown-item">Website Development</a>
+                        <a href="index.html#services" class="dropdown-item">Website Design</a>
+                        <a href="index.html#services" class="dropdown-item">UI/UX Design</a>
+                        <a href="index.html#services" class="dropdown-item">E-Commerce</a>
+                        <a href="index.html#services" class="dropdown-item">SEO Services</a>
                     </div>
                 </div>
-                <a href="about.html"
-                    class="text-sm font-medium text-brand-green transition-colors font-semibold">About</a>
-                <a href="contact.html"
-                    class="text-sm font-medium text-slate-700 hover:text-brand-green transition-colors">Contact</a>
+                <a href="contact.html" class="nav-link">Contact</a>
             </div>
 
-            <div class="hidden lg:block">
-                <a href="contact.html"
-                    class="bg-brand-green hover:bg-brand-green-dark text-white px-6 py-3 rounded-lg font-semibold text-sm transition-all shadow-md">
+            <div class="cta-desktop">
+                <a href="contact.html" class="btn btn-primary">
                     Get Started
                 </a>
             </div>
 
-            <button id="menu-btn" class="lg:hidden p-2 text-slate-900">
-                <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <button id="menu-btn" class="mobile-menu-btn">
+                <svg class="menu-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16">
                     </path>
                 </svg>
             </button>
         </nav>
 
-        <div id="mobile-menu"
-            class="hidden lg:hidden bg-white border-b border-slate-100 absolute w-full left-0 px-6 py-6 shadow-xl space-y-4">
-            <a href="index.html" class="block text-lg font-semibold py-2">Home</a>
-            <a href="about.html" class="block text-lg font-semibold py-2 text-brand-green">About</a>
-            <a href="index.html#services" class="block text-lg font-semibold py-2">Services</a>
-            <a href="contact.html" class="block bg-brand-green text-white text-center py-4 rounded-2xl font-bold">Get
-                Started</a>
+        <div id="mobile-menu" class="mobile-menu hidden">
+            <a href="index.html" class="mobile-menu-link">Home</a>
+            <a href="about.html" class="mobile-menu-link">About</a>
+            <div class="mobile-dropdown">
+                <button class="mobile-dropdown-btn" id="mobile-services-btn">
+                    Services
+                    <svg class="mobile-dropdown-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                    </svg>
+                </button>
+                <div class="mobile-dropdown-menu hidden" id="mobile-services-menu">
+                    <a href="web-development.html" class="mobile-dropdown-item">Website Development</a>
+                    <a href="index.html#services" class="mobile-dropdown-item">Website Design</a>
+                    <a href="index.html#services" class="mobile-dropdown-item">UI/UX Design</a>
+                    <a href="index.html#services" class="mobile-dropdown-item">E-Commerce</a>
+                    <a href="index.html#services" class="mobile-dropdown-item">SEO Services</a>
+                </div>
+            </div>
+            <a href="contact.html" class="mobile-menu-link">Contact</a>
+            <a href="contact.html" class="mobile-menu-cta">Get Started</a>
         </div>
     </header>
 
-    <script>
-        // Mobile menu toggle
-        const menuBtn = document.getElementById('menu-btn');
-        const mobileMenu = document.getElementById('mobile-menu');
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-section about-hero">
+            <div class="hero-decoration">
+                <div class="hero-circle hero-circle-1"></div>
+                <div class="hero-circle hero-circle-2"></div>
+            </div>
+            <div class="container hero-content">
+                <div class="hero-badge">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+                        <path d="M10 2l2.5 6.5L19 10l-6.5 2.5L10 19l-2.5-6.5L1 10l6.5-2.5L10 2z" />
+                    </svg>
+                    <span>Learn About Us</span>
+                </div>
+                <h1 class="hero-title">
+                    About <span class="text-accent">Webotrex</span>
+                </h1>
+                <p class="hero-description">
+                    Your trusted web development partner across Coastal Karnataka.<br>
+                    Building digital excellence since 2019.
+                </p>
+            </div>
+        </section>
 
-        menuBtn.addEventListener('click', () => {
-            mobileMenu.classList.toggle('hidden');
-        });
-    </script>
+        <!-- Company Overview Section -->
+        <section class="company-overview-section">
+            <div class="container">
+                <div class="overview-grid">
+                    <div class="overview-content">
+                        <h2 class="overview-title">
+                            Professional Web Solutions for <span class="text-brand">Coastal Karnataka</span>
+                        </h2>
+                        <p class="overview-text">
+                            Webotrex is a <strong>professional web design and development agency</strong> based in
+                            Kundapura, Udupi District, Karnataka. We specialize in creating custom websites and digital
+                            solutions for local businesses across coastal Karnataka.
+                        </p>
+                        <p class="overview-text">
+                            Our team delivers <strong>fast-loading, SEO-friendly websites</strong> using modern web
+                            technologies custom-built code tailored specifically to your business needs.
+                        </p>
+                        <div class="overview-highlights">
+                            <div class="highlight-item">
+                                <svg class="highlight-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                <span>Custom-coded websites</span>
+                            </div>
+                            <div class="highlight-item">
+                                <svg class="highlight-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                <span>Lightning-fast performance</span>
+                            </div>
+                            <div class="highlight-item">
+                                <svg class="highlight-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                <span>Local expertise & support</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="overview-image">
+                        <div class="image-placeholder">
+                            <svg class="placeholder-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z">
+                                </path>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-    <!-- Hero Section -->
-    <section
-        class="relative bg-gradient-to-br from-brand-green to-brand-green-dark text-white py-20 md:py-28 overflow-hidden">
-        <div class="absolute inset-0 opacity-10">
-            <div class="absolute top-0 left-0 w-96 h-96 bg-white rounded-full blur-3xl"></div>
-            <div class="absolute bottom-0 right-0 w-96 h-96 bg-brand-mint rounded-full blur-3xl"></div>
-        </div>
-
-        <div class="container mx-auto px-6 relative z-10 text-center">
-            <h1 class="text-4xl md:text-5xl lg:text-6xl font-black leading-tight mb-6">
-                About <span class="text-brand-mint">Webotrex</span>
-            </h1>
-            <p class="text-lg md:text-xl text-white/80 max-w-3xl mx-auto leading-relaxed">
-                Your trusted web development partner in Kundapura, Udupi, and Mangalore. Building digital excellence
-                since 2019.
-            </p>
-        </div>
-    </section>
-
-    <!-- Our Story Section -->
-    <section class="py-20 md:py-28 bg-white">
-        <div class="container mx-auto px-6">
-            <div class="max-w-4xl mx-auto">
-                <div class="text-center mb-16">
-                    <h2 class="text-4xl md:text-5xl font-black text-slate-900 mb-4">
-                        Our <span class="text-brand-green">Story</span>
+        <!-- Our Approach Section -->
+        <section class="approach-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title center">
+                        Our <span class="text-brand">Approach</span>
                     </h2>
-                    <p class="text-slate-600 text-lg">
-                        Building digital solutions for local businesses across coastal Karnataka
+                    <p class="section-description">
+                        A proven process that delivers exceptional results
                     </p>
                 </div>
 
-                <div class="prose prose-lg max-w-none">
-                    <p class="text-slate-700 leading-relaxed mb-6">
-                        Webotrex is a <strong class="text-brand-green">professional web design and development
-                            agency</strong> based in <strong>Kundapura, Udupi District, Karnataka</strong>. We
-                        specialize in creating custom HTML websites, modern web designs, and complete digital solutions
-                        for local businesses including cafes, bakeries, startups, shops, and service providers across
-                        coastal Karnataka.
-                    </p>
-
-                    <p class="text-slate-700 leading-relaxed mb-6">
-                        Unlike template-based solutions, we build <strong class="text-brand-green">fast-loading,
-                            SEO-friendly websites using clean HTML, CSS, and JavaScript</strong> without WordPress
-                        dependency. Our custom-coded approach ensures superior performance, security, and flexibility
-                        tailored to your business needs.
-                    </p>
-
-                    <p class="text-slate-700 leading-relaxed">
-                        With experience serving businesses in <strong>Kundapura, Udupi, Mangalore, and surrounding
-                            areas</strong>, we understand the local market and provide <strong
-                            class="text-brand-green">direct communication, on-time delivery, and long-term
-                            support</strong>. Our affordable pricing makes professional web presence accessible to small
-                        businesses looking to grow online.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Why Choose Us Section -->
-    <section class="py-20 md:py-28 bg-slate-50">
-        <div class="container mx-auto px-6">
-            <div class="text-center mb-16">
-                <h2 class="text-4xl md:text-5xl font-black text-slate-900 mb-4">
-                    Why Choose <span class="text-brand-green">Webotrex?</span>
-                </h2>
-                <p class="text-slate-600 text-lg max-w-2xl mx-auto">
-                    We're not just developers – we're your digital growth partners
-                </p>
-            </div>
-
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
-                <!-- Feature 1 -->
-                <div class="bg-white p-8 rounded-3xl shadow-lg hover:shadow-xl transition-all">
-                    <div
-                        class="w-14 h-14 bg-gradient-to-br from-brand-green to-emerald-600 rounded-2xl flex items-center justify-center mb-6">
-                        <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path>
-                        </svg>
+                <div class="approach-grid">
+                    <div class="approach-card">
+                        <div class="approach-number">01</div>
+                        <h3 class="approach-title">Discover</h3>
+                        <p class="approach-description">
+                            We start by understanding your business, goals, and target audience to create the perfect
+                            digital strategy.
+                        </p>
                     </div>
-                    <h3 class="text-xl font-bold text-slate-900 mb-3">Custom Code</h3>
-                    <p class="text-slate-600 leading-relaxed">
-                        We build websites from scratch using HTML, CSS, and JavaScript. No WordPress, no templates –
-                        just clean, optimized code.
-                    </p>
-                </div>
-
-                <!-- Feature 2 -->
-                <div class="bg-white p-8 rounded-3xl shadow-lg hover:shadow-xl transition-all">
-                    <div
-                        class="w-14 h-14 bg-gradient-to-br from-purple-500 to-purple-700 rounded-2xl flex items-center justify-center mb-6">
-                        <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M13 10V3L4 14h7v7l9-11h-7z"></path>
-                        </svg>
+                    <div class="approach-card">
+                        <div class="approach-number">02</div>
+                        <h3 class="approach-title">Design</h3>
+                        <p class="approach-description">
+                            Our team crafts modern, user-friendly designs that reflect your brand and engage your
+                            visitors.
+                        </p>
                     </div>
-                    <h3 class="text-xl font-bold text-slate-900 mb-3">Lightning Fast</h3>
-                    <p class="text-slate-600 leading-relaxed">
-                        Our websites load in under 2 seconds. Fast performance means better user experience and higher
-                        Google rankings.
-                    </p>
-                </div>
-
-                <!-- Feature 3 -->
-                <div class="bg-white p-8 rounded-3xl shadow-lg hover:shadow-xl transition-all">
-                    <div
-                        class="w-14 h-14 bg-gradient-to-br from-cyan-500 to-cyan-700 rounded-2xl flex items-center justify-center mb-6">
-                        <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
-                        </svg>
+                    <div class="approach-card">
+                        <div class="approach-number">03</div>
+                        <h3 class="approach-title">Develop</h3>
+                        <p class="approach-description">
+                            We build your website with clean code, optimized for speed, SEO, and mobile responsiveness.
+                        </p>
                     </div>
-                    <h3 class="text-xl font-bold text-slate-900 mb-3">SEO Optimized</h3>
-                    <p class="text-slate-600 leading-relaxed">
-                        Every website is built with SEO best practices. Rank higher on Google and get more organic
-                        traffic.
-                    </p>
-                </div>
-
-                <!-- Feature 4 -->
-                <div class="bg-white p-8 rounded-3xl shadow-lg hover:shadow-xl transition-all">
-                    <div
-                        class="w-14 h-14 bg-gradient-to-br from-orange-500 to-orange-700 rounded-2xl flex items-center justify-center mb-6">
-                        <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"></path>
-                        </svg>
+                    <div class="approach-card">
+                        <div class="approach-number">04</div>
+                        <h3 class="approach-title">Deploy</h3>
+                        <p class="approach-description">
+                            After thorough testing, we launch your website and provide ongoing support for your success.
+                        </p>
                     </div>
-                    <h3 class="text-xl font-bold text-slate-900 mb-3">Mobile First</h3>
-                    <p class="text-slate-600 leading-relaxed">
-                        All our websites are fully responsive and look perfect on phones, tablets, and desktops.
-                    </p>
-                </div>
-
-                <!-- Feature 5 -->
-                <div class="bg-white p-8 rounded-3xl shadow-lg hover:shadow-xl transition-all">
-                    <div
-                        class="w-14 h-14 bg-gradient-to-br from-pink-500 to-pink-700 rounded-2xl flex items-center justify-center mb-6">
-                        <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z">
-                            </path>
-                        </svg>
-                    </div>
-                    <h3 class="text-xl font-bold text-slate-900 mb-3">Local Support</h3>
-                    <p class="text-slate-600 leading-relaxed">
-                        Based in Kundapura, we understand the local market. Get direct support in your language.
-                    </p>
-                </div>
-
-                <!-- Feature 6 -->
-                <div class="bg-white p-8 rounded-3xl shadow-lg hover:shadow-xl transition-all">
-                    <div
-                        class="w-14 h-14 bg-gradient-to-br from-blue-500 to-blue-700 rounded-2xl flex items-center justify-center mb-6">
-                        <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z">
-                            </path>
-                        </svg>
-                    </div>
-                    <h3 class="text-xl font-bold text-slate-900 mb-3">Affordable Pricing</h3>
-                    <p class="text-slate-600 leading-relaxed">
-                        Professional websites at prices that work for small businesses. No hidden costs, transparent
-                        pricing.
-                    </p>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Stats Section -->
-    <section class="py-20 bg-gradient-to-br from-brand-green to-brand-green-dark text-white">
-        <div class="container mx-auto px-6">
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-4xl mx-auto text-center">
-                <div>
-                    <div class="text-5xl font-black text-brand-mint mb-2">50+</div>
-                    <div class="text-white/80">Projects Delivered</div>
-                </div>
-                <div>
-                    <div class="text-5xl font-black text-brand-mint mb-2">5+</div>
-                    <div class="text-white/80">Years Experience</div>
-                </div>
-                <div>
-                    <div class="text-5xl font-black text-brand-mint mb-2">100%</div>
-                    <div class="text-white/80">Client Satisfaction</div>
-                </div>
-                <div>
-                    <div class="text-5xl font-black text-brand-mint mb-2">24/7</div>
-                    <div class="text-white/80">Support Available</div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Our Services Overview -->
-    <section class="py-20 md:py-28 bg-white">
-        <div class="container mx-auto px-6">
-            <div class="text-center mb-16">
-                <h2 class="text-4xl md:text-5xl font-black text-slate-900 mb-4">
-                    What We <span class="text-brand-green">Offer</span>
-                </h2>
-                <p class="text-slate-600 text-lg max-w-2xl mx-auto">
-                    Complete digital solutions for your business growth
-                </p>
-            </div>
-
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
-                <div class="bg-gradient-to-br from-slate-50 to-white p-6 rounded-2xl border border-slate-100">
-                    <h3 class="font-bold text-lg text-slate-900 mb-2">🌐 Website Development</h3>
-                    <p class="text-slate-600 text-sm">Custom HTML websites, landing pages, business websites, portfolio
-                        sites</p>
-                </div>
-                <div class="bg-gradient-to-br from-slate-50 to-white p-6 rounded-2xl border border-slate-100">
-                    <h3 class="font-bold text-lg text-slate-900 mb-2">🎨 Web Design</h3>
-                    <p class="text-slate-600 text-sm">Modern UI/UX design, responsive layouts, brand identity design</p>
-                </div>
-                <div class="bg-gradient-to-br from-slate-50 to-white p-6 rounded-2xl border border-slate-100">
-                    <h3 class="font-bold text-lg text-slate-900 mb-2">🛒 E-Commerce</h3>
-                    <p class="text-slate-600 text-sm">Online stores, payment integration, inventory management</p>
-                </div>
-                <div class="bg-gradient-to-br from-slate-50 to-white p-6 rounded-2xl border border-slate-100">
-                    <h3 class="font-bold text-lg text-slate-900 mb-2">💻 Software Solutions</h3>
-                    <p class="text-slate-600 text-sm">Custom software, admin dashboards, business automation tools</p>
-                </div>
-                <div class="bg-gradient-to-br from-slate-50 to-white p-6 rounded-2xl border border-slate-100">
-                    <h3 class="font-bold text-lg text-slate-900 mb-2">📱 Social Media Management</h3>
-                    <p class="text-slate-600 text-sm">Instagram marketing, Facebook ads, content creation, reel editing
+        <!-- Why Choose Us Section -->
+        <section class="why-choose-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title center">
+                        Why Choose <span class="text-brand">Webotrex?</span>
+                    </h2>
+                    <p class="section-description">
+                        We deliver more than just websites—we deliver results
                     </p>
                 </div>
-                <div class="bg-gradient-to-br from-slate-50 to-white p-6 rounded-2xl border border-slate-100">
-                    <h3 class="font-bold text-lg text-slate-900 mb-2">🔍 SEO Services</h3>
-                    <p class="text-slate-600 text-sm">Local SEO, Google ranking, keyword optimization, analytics</p>
+
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon icon-green">
+                            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path>
+                            </svg>
+                        </div>
+                        <h3 class="feature-title">Custom Development</h3>
+                        <p class="feature-description">
+                            Hand-coded websites built from scratch—no templates, no limitations, just pure custom
+                            solutions.
+                        </p>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon icon-purple">
+                            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="feature-title">High Performance</h3>
+                        <p class="feature-description">
+                            Optimized for speed with load times under 2 seconds, ensuring better user experience and
+                            SEO.
+                        </p>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon icon-cyan">
+                            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="feature-title">SEO Focused</h3>
+                        <p class="feature-description">
+                            Built with best SEO practices to help you rank higher on Google and attract organic traffic.
+                        </p>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon icon-orange">
+                            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z">
+                                </path>
+                            </svg>
+                        </div>
+                        <h3 class="feature-title">Mobile Responsive</h3>
+                        <p class="feature-description">
+                            Fully responsive designs that look stunning on all devices—phones, tablets, and desktops.
+                        </p>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon icon-pink">
+                            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z">
+                                </path>
+                            </svg>
+                        </div>
+                        <h3 class="feature-title">Local Support</h3>
+                        <p class="feature-description">
+                            Based in Kundapura with deep local market knowledge and direct communication in your
+                            language.
+                        </p>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon icon-blue">
+                            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z">
+                                </path>
+                            </svg>
+                        </div>
+                        <h3 class="feature-title">Affordable Pricing</h3>
+                        <p class="feature-description">
+                            Professional-quality websites at transparent, affordable prices designed for small
+                            businesses.
+                        </p>
+                    </div>
                 </div>
             </div>
+        </section>
 
-            <div class="text-center mt-12">
-                <a href="index.html#services"
-                    class="inline-block bg-brand-green hover:bg-emerald-600 text-white px-8 py-4 rounded-lg font-bold transition-all shadow-lg">
-                    View All Services →
-                </a>
+        <!-- Services Overview Section -->
+        <section class="services-overview-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title center">
+                        What We <span class="text-brand">Offer</span>
+                    </h2>
+                    <p class="section-description">
+                        Complete digital solutions to grow your business online
+                    </p>
+                </div>
+
+                <div class="services-overview-grid">
+                    <div class="service-overview-card" data-aos="fade-up" data-aos-delay="0">
+                        <div class="service-card-icon icon-green">
+                            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9">
+                                </path>
+                            </svg>
+                        </div>
+                        <h3 class="service-overview-title">Website Development</h3>
+                        <p class="service-overview-text">Custom HTML websites, landing pages, business websites, and
+                            portfolio sites built from scratch.</p>
+                    </div>
+
+                    <div class="service-overview-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="service-card-icon icon-purple">
+                            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 5a1 1 0 011-1h14a1 1 0 011 1v2a1 1 0 01-1 1H5a1 1 0 01-1-1V5zM4 13a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H5a1 1 0 01-1-1v-6zM16 13a1 1 0 011-1h2a1 1 0 011 1v6a1 1 0 01-1 1h-2a1 1 0 01-1-1v-6z">
+                                </path>
+                            </svg>
+                        </div>
+                        <h3 class="service-overview-title">Web Design</h3>
+                        <p class="service-overview-text">Modern UI/UX design, responsive layouts, and brand identity
+                            design that captivates visitors.</p>
+                    </div>
+
+                    <div class="service-overview-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="service-card-icon icon-orange">
+                            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z">
+                                </path>
+                            </svg>
+                        </div>
+                        <h3 class="service-overview-title">E-Commerce</h3>
+                        <p class="service-overview-text">Online stores with payment integration, inventory management,
+                            and checkout optimization.</p>
+                    </div>
+
+                    <div class="service-overview-card" data-aos="fade-up" data-aos-delay="0">
+                        <div class="service-card-icon icon-cyan">
+                            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path>
+                            </svg>
+                        </div>
+                        <h3 class="service-overview-title">Software Solutions</h3>
+                        <p class="service-overview-text">Custom software, admin dashboards, and business automation
+                            tools tailored to your needs.</p>
+                    </div>
+
+                    <div class="service-overview-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="service-card-icon icon-pink">
+                            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.368 2.684 3 3 0 00-5.368-2.684z">
+                                </path>
+                            </svg>
+                        </div>
+                        <h3 class="service-overview-title">Social Media Management</h3>
+                        <p class="service-overview-text">Instagram marketing, Facebook ads, content creation, and
+                            engagement strategies.</p>
+                    </div>
+
+                    <div class="service-overview-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="service-card-icon icon-blue">
+                            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="service-overview-title">SEO Services</h3>
+                        <p class="service-overview-text">Local SEO, Google ranking, keyword optimization, and
+                            performance analytics.</p>
+                    </div>
+                </div>
+
+                <div class="services-cta">
+                    <a href="index.html#services" class="btn btn-dark btn-lg">
+                        View All Services
+                    </a>
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- CTA Section -->
-    <section
-        class="py-20 md:py-28 bg-gradient-to-br from-brand-green to-brand-green-dark text-white overflow-hidden relative">
-        <div class="absolute inset-0 opacity-10">
-            <div class="absolute top-0 left-0 w-96 h-96 bg-white rounded-full blur-3xl"></div>
-            <div class="absolute bottom-0 right-0 w-96 h-96 bg-brand-mint rounded-full blur-3xl"></div>
-        </div>
+        <!-- CTA Section -->
+        <section class="cta-section" data-aos="slide-up" data-aos-delay="70">
+            <div class="cta-bg-shapes">
+                <div class="shape shape-1"></div>
+                <div class="shape shape-2"></div>
+            </div>
 
-        <div class="container mx-auto px-6 relative z-10">
-            <div class="max-w-4xl mx-auto text-center">
-                <h2 class="text-3xl md:text-5xl font-black mb-6">
+            <div class="container cta-content">
+                <h2 class="cta-title" data-aos="fade-down" data-aos-delay="100">
                     Ready to Start Your Project?
                 </h2>
-                <p class="text-white/80 text-lg md:text-xl mb-10 max-w-2xl mx-auto leading-relaxed">
+                <p class="cta-description" data-aos="fade-in" data-aos-delay="500">
                     Let's build something amazing together. Get a free consultation and custom quote today!
                 </p>
-                <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                    <a href="contact.html"
-                        class="bg-brand-mint text-brand-deep font-bold px-8 py-4 rounded-lg transition-all shadow-lg hover:scale-105">
+                <div class="cta-buttons">
+                    <a href="contact.html" class="btn btn-white" data-aos="fade-right" data-aos-delay="200">
                         Get Started →
                     </a>
-                    <a href="tel:+918217358117"
-                        class="bg-white/10 hover:bg-white/20 border-2 border-white/30 text-white font-semibold px-8 py-4 rounded-lg transition-all backdrop-blur-sm">
+                    <a href="tel:+918217358117" class="btn btn-accent-outline" data-aos="fade-left"
+                        data-aos-delay="200">
                         Call +91 8217358117
                     </a>
                 </div>
+            </div>
+        </section>
 
-                <div class="mt-16 grid grid-cols-2 md:grid-cols-4 gap-8 max-w-4xl mx-auto">
-                    <div class="text-center">
-                        <div class="text-4xl font-black text-brand-mint mb-2">50+</div>
-                        <div class="text-white/70 text-sm">Projects Delivered</div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-main">
+            <div class="container">
+                <div class="footer-content">
+                    <!-- Brand Column -->
+                    <div class="footer-col footer-col-brand">
+                        <a href="index.html" class="footer-logo">
+                            <img src="assets/images/Webotrex-logo-transparent.png" alt="Webotrex">
+                        </a>
+                        <p class="footer-tagline">Building digital excellence for businesses across Coastal Karnataka
+                        </p>
+                        <div class="footer-social">
+                            <a href="#" class="social-icon" aria-label="Instagram">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path
+                                        d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2m-.2 2A3.6 3.6 0 0 0 4 7.6v8.8C4 18.39 5.61 20 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6C20 5.61 18.39 4 16.4 4H7.6m9.65 1.5a1.25 1.25 0 0 1 1.25 1.25A1.25 1.25 0 0 1 17.25 8 1.25 1.25 0 0 1 16 6.75a1.25 1.25 0 0 1 1.25-1.25M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3z" />
+                                </svg>
+                            </a>
+                            <a href="#" class="social-icon" aria-label="LinkedIn">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path
+                                        d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+                                </svg>
+                            </a>
+                            <a href="#" class="social-icon" aria-label="Twitter">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path
+                                        d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+                                </svg>
+                            </a>
+                            <a href="#" class="social-icon" aria-label="Facebook">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path
+                                        d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+                                </svg>
+                            </a>
+                        </div>
                     </div>
-                    <div class="text-center">
-                        <div class="text-4xl font-black text-brand-mint mb-2">5+</div>
-                        <div class="text-white/70 text-sm">Years Experience</div>
+
+                    <!-- Quick Links -->
+                    <div class="footer-col">
+                        <h3 class="footer-title">Company</h3>
+                        <ul class="footer-list">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="index.html#services">Services</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
                     </div>
-                    <div class="text-center">
-                        <div class="text-4xl font-black text-brand-mint mb-2">100%</div>
-                        <div class="text-white/70 text-sm">Client Satisfaction</div>
+
+                    <!-- Services -->
+                    <div class="footer-col">
+                        <h3 class="footer-title">Services</h3>
+                        <ul class="footer-list">
+                            <li><a href="index.html#services">Web Development</a></li>
+                            <li><a href="index.html#services">Web Design</a></li>
+                            <li><a href="index.html#services">UI/UX Design</a></li>
+                            <li><a href="index.html#services">E-Commerce</a></li>
+                            <li><a href="index.html#services">SEO Services</a></li>
+                        </ul>
                     </div>
-                    <div class="text-center">
-                        <div class="text-4xl font-black text-brand-mint mb-2">24/7</div>
-                        <div class="text-white/70 text-sm">Support Available</div>
+
+                    <!-- Contact Info -->
+                    <div class="footer-col">
+                        <h3 class="footer-title">Contact</h3>
+                        <ul class="footer-contact-list">
+                            <li>
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                                </svg>
+                                <span>Kundapura, Udupi<br>Karnataka 576217</span>
+                            </li>
+                            <li>
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                                </svg>
+                                <a href="tel:+918217358117">+91 8217358117</a>
+                            </li>
+                            <li>
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                                </svg>
+                                <a href="mailto:webotrexsolutions@gmail.com">webotrexsolutions@gmail.com</a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
 
-    <!-- Footer -->
-    <footer id="contact" class="bg-brand-deep text-white pt-20 pb-10">
-        <div class="container mx-auto px-6">
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
-                <div>
-                    <div class="mb-6">
-                        <img src="assets/images/Webotrex-logo-transparent.png" alt="Webotrex Logo" class="h-12">
+        <!-- Footer Bottom -->
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="footer-bottom-content">
+                    <p class="footer-copyright">© 2025 Webotrex. All rights reserved.</p>
+                    <div class="footer-legal-links">
+                        <a href="privacy-policy.html">Privacy Policy</a>
+                        <a href="terms-of-service.html">Terms of Service</a>
                     </div>
-                    <p class="text-slate-400 leading-relaxed mb-8 text-sm">
-                        Creating exceptional digital experiences for businesses worldwide. Your trusted partner in web
-                        development and design.
-                    </p>
-                    <div class="flex space-x-3">
-                        <a href="#"
-                            class="w-10 h-10 rounded-xl bg-purple-600 hover:bg-purple-700 flex items-center justify-center transition-colors">
-                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-                                <path
-                                    d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073z">
-                                </path>
-                            </svg>
-                        </a>
-                        <a href="#"
-                            class="w-10 h-10 rounded-xl bg-blue-600 hover:bg-blue-700 flex items-center justify-center transition-colors">
-                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-                                <path
-                                    d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z">
-                                </path>
-                            </svg>
-                        </a>
-                        <a href="#"
-                            class="w-10 h-10 rounded-xl bg-slate-700 hover:bg-slate-600 flex items-center justify-center transition-colors">
-                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-                                <path
-                                    d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z">
-                                </path>
-                            </svg>
-                        </a>
-                        <a href="#"
-                            class="w-10 h-10 rounded-xl bg-blue-600 hover:bg-blue-700 flex items-center justify-center transition-colors">
-                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-                                <path
-                                    d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z">
-                                </path>
-                            </svg>
-                        </a>
-                    </div>
-                </div>
-
-                <div>
-                    <h4 class="text-lg font-bold mb-6">Quick Links</h4>
-                    <ul class="space-y-3 text-slate-400 text-sm">
-                        <li><a href="about.html" class="hover:text-brand-green transition-colors">About Us</a></li>
-                        <li><a href="index.html#services" class="hover:text-brand-green transition-colors">Services</a>
-                        </li>
-                        <li><a href="index.html" class="hover:text-brand-green transition-colors">Home</a></li>
-                        <li><a href="contact.html" class="hover:text-brand-green transition-colors">Contact</a></li>
-                    </ul>
-                </div>
-
-                <div>
-                    <h4 class="text-lg font-bold mb-6">Our Services</h4>
-                    <ul class="space-y-3 text-slate-400 text-sm">
-                        <li><a href="index.html#services" class="hover:text-brand-green transition-colors">Web
-                                Development</a></li>
-                        <li><a href="index.html#services" class="hover:text-brand-green transition-colors">Web
-                                Design</a></li>
-                        <li><a href="index.html#services" class="hover:text-brand-green transition-colors">UI/UX
-                                Design</a></li>
-                        <li><a href="index.html#services"
-                                class="hover:text-brand-green transition-colors">E-Commerce</a></li>
-                        <li><a href="index.html#services" class="hover:text-brand-green transition-colors">SEO
-                                Services</a></li>
-                    </ul>
-                </div>
-
-                <div>
-                    <h4 class="text-lg font-bold mb-6">Get In Touch</h4>
-                    <ul class="space-y-4 text-slate-400 text-sm">
-                        <li class="flex items-start">
-                            <div
-                                class="w-10 h-10 bg-blue-600 rounded-lg flex items-center justify-center mr-3 flex-shrink-0">
-                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                        d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z">
-                                    </path>
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                        d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
-                                </svg>
-                            </div>
-                            <span>Moodlakatte Institute of Technology, Kundapura, Udupi, Karnataka 576217</span>
-                        </li>
-                        <li class="flex items-center">
-                            <div
-                                class="w-10 h-10 bg-purple-600 rounded-lg flex items-center justify-center mr-3 flex-shrink-0">
-                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                        d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z">
-                                    </path>
-                                </svg>
-                            </div>
-                            <span>+91 8217358117</span>
-                        </li>
-                        <li class="flex items-center">
-                            <div
-                                class="w-10 h-10 bg-cyan-600 rounded-lg flex items-center justify-center mr-3 flex-shrink-0">
-                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                        d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z">
-                                    </path>
-                                </svg>
-                            </div>
-                            <span>info@webotrex.com</span>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="border-t border-slate-800 pt-8">
-                <div class="flex flex-col md:flex-row justify-between items-center gap-6">
-                    <div class="flex flex-wrap justify-center gap-3 text-xs text-slate-500">
-                        <span>Website Development Kundapura</span>
-                        <span>•</span>
-                        <span>Web Design Udupi</span>
-                        <span>•</span>
-                        <span>Software Solutions</span>
-                        <span>•</span>
-                        <span>Social Media Management</span>
-                        <span>•</span>
-                        <span>Custom HTML Websites</span>
-                    </div>
-                    <div class="flex gap-6 text-xs text-slate-500">
-                        <a href="#" class="hover:text-white transition-colors">Privacy Policy</a>
-                        <a href="#" class="hover:text-white transition-colors">Terms of Service</a>
-                        <a href="#" class="hover:text-white transition-colors">Cookie Policy</a>
-                    </div>
-                </div>
-                <div class="text-center mt-6 text-sm text-slate-500">
-                    © 2025 Webotrex - Website Development & Digital Agency in Kundapura, Udupi, Karnataka, India. All
-                    rights reserved.
                 </div>
             </div>
         </div>
     </footer>
+
+    <script src="assets/js/script.js"></script>
+
+    <!-- AOS Animation Library -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            easing: 'ease-in-out',
+            once: true,
+            offset: 100,
+            delay: 0
+        });
+    </script>
 </body>
 
 </html>
