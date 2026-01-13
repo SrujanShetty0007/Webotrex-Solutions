@@ -1,0 +1,564 @@
+/* ==========================================
+   STARTUP PAGE STYLES
+   Unique Layout for Startup-focused Content
+   ========================================== */
+
+/* Intro Section */
+.startup-intro {
+    padding: 5rem 0;
+    background: #ffffff;
+}
+
+.intro-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 3rem;
+    align-items: center;
+}
+
+@media (min-width: 768px) {
+    .intro-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+.intro-content h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #111827;
+    margin-bottom: 1.5rem;
+    line-height: 1.3;
+}
+
+.intro-content h2 .text-brand {
+    color: #059669;
+}
+
+.intro-content p {
+    font-size: 1.0625rem;
+    color: #4b5563;
+    line-height: 1.8;
+    margin-bottom: 1rem;
+}
+
+.intro-highlight {
+    background: linear-gradient(135deg, #f0fdf4 0%, #ecfdf5 100%);
+    border-left: 4px solid #059669;
+    padding: 1.5rem;
+    border-radius: 0 12px 12px 0;
+    margin-top: 1.5rem;
+}
+
+.intro-highlight p {
+    margin: 0;
+    font-weight: 500;
+    color: #047857;
+}
+
+.intro-visual {
+    background: linear-gradient(135deg, #059669 0%, #047857 100%);
+    border-radius: 16px;
+    padding: 2.5rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.intro-visual::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    right: -50%;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.1) 0%, transparent 70%);
+}
+
+.startup-stats {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+    position: relative;
+    z-index: 1;
+}
+
+.stat-item {
+    text-align: center;
+}
+
+.stat-value {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: white;
+    line-height: 1;
+    margin-bottom: 0.5rem;
+}
+
+.stat-label {
+    font-size: 0.875rem;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+/* Why Website Section */
+.why-website {
+    padding: 5rem 0;
+    background: #f9fafb;
+}
+
+.why-header {
+    text-align: center;
+    margin-bottom: 3.5rem;
+}
+
+.why-header h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #111827;
+    margin-bottom: 1rem;
+}
+
+.why-header h2 .text-brand {
+    color: #059669;
+}
+
+.why-header p {
+    font-size: 1.0625rem;
+    color: #6b7280;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.why-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+}
+
+@media (min-width: 640px) {
+    .why-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 1024px) {
+    .why-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+.why-card {
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 2rem;
+    text-align: center;
+    border: 1px solid #e5e7eb;
+    transition: all 0.3s ease;
+}
+
+.why-card:hover {
+    border-color: #059669;
+    transform: translateY(-4px);
+    box-shadow: 0 10px 30px rgba(5, 150, 105, 0.1);
+}
+
+.why-card-icon {
+    width: 56px;
+    height: 56px;
+    background: linear-gradient(135deg, #059669, #10b981);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1.25rem;
+}
+
+.why-card-icon svg {
+    width: 28px;
+    height: 28px;
+    color: white;
+    stroke: currentColor;
+}
+
+.why-card h3 {
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: #111827;
+    margin-bottom: 0.75rem;
+}
+
+.why-card p {
+    font-size: 0.9375rem;
+    color: #6b7280;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* MVP Process Section */
+.mvp-process {
+    padding: 5rem 0;
+    background: #ffffff;
+}
+
+.process-header {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.process-header h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #111827;
+    margin-bottom: 1rem;
+}
+
+.process-header h2 .text-brand {
+    color: #059669;
+}
+
+.process-header p {
+    font-size: 1.0625rem;
+    color: #6b7280;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.process-timeline {
+    position: relative;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.process-timeline::before {
+    content: '';
+    position: absolute;
+    left: 24px;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: linear-gradient(180deg, #059669 0%, #10b981 100%);
+}
+
+@media (min-width: 768px) {
+    .process-timeline::before {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+.process-step {
+    position: relative;
+    padding-left: 70px;
+    padding-bottom: 3rem;
+}
+
+.process-step:last-child {
+    padding-bottom: 0;
+}
+
+@media (min-width: 768px) {
+    .process-step {
+        padding-left: 0;
+        padding-right: 0;
+        display: grid;
+        grid-template-columns: 1fr 60px 1fr;
+        gap: 2rem;
+        align-items: center;
+    }
+
+    .process-step:nth-child(odd) .step-content {
+        grid-column: 1;
+        text-align: right;
+    }
+
+    .process-step:nth-child(odd) .step-number {
+        grid-column: 2;
+    }
+
+    .process-step:nth-child(odd) .step-visual {
+        grid-column: 3;
+    }
+
+    .process-step:nth-child(even) .step-content {
+        grid-column: 3;
+        text-align: left;
+    }
+
+    .process-step:nth-child(even) .step-number {
+        grid-column: 2;
+    }
+
+    .process-step:nth-child(even) .step-visual {
+        grid-column: 1;
+        grid-row: 1;
+    }
+}
+
+.step-number {
+    position: absolute;
+    left: 0;
+    width: 48px;
+    height: 48px;
+    background: linear-gradient(135deg, #059669 0%, #047857 100%);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: white;
+    z-index: 1;
+}
+
+@media (min-width: 768px) {
+    .step-number {
+        position: relative;
+        left: auto;
+        margin: 0 auto;
+    }
+}
+
+.step-content h3 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #111827;
+    margin-bottom: 0.75rem;
+}
+
+.step-content p {
+    font-size: 0.9375rem;
+    color: #6b7280;
+    line-height: 1.6;
+    margin: 0;
+}
+
+.step-visual {
+    display: none;
+}
+
+@media (min-width: 768px) {
+    .step-visual {
+        display: block;
+        background: #f9fafb;
+        border-radius: 12px;
+        padding: 1.5rem;
+        border: 1px solid #e5e7eb;
+    }
+}
+
+.step-tag {
+    display: inline-block;
+    background: #ecfdf5;
+    color: #047857;
+    font-size: 0.75rem;
+    font-weight: 600;
+    padding: 0.25rem 0.75rem;
+    border-radius: 20px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/* MVP Features Section */
+.mvp-features {
+    padding: 5rem 0;
+    background: linear-gradient(135deg, #059669 0%, #047857 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+.mvp-features::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background:
+        radial-gradient(circle at 20% 80%, rgba(255, 255, 255, 0.1) 0%, transparent 50%),
+        radial-gradient(circle at 80% 20%, rgba(255, 255, 255, 0.08) 0%, transparent 50%);
+}
+
+.mvp-features .container {
+    position: relative;
+    z-index: 1;
+}
+
+.mvp-header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.mvp-header h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 1rem;
+}
+
+.mvp-header p {
+    font-size: 1.0625rem;
+    color: rgba(255, 255, 255, 0.9);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.mvp-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+}
+
+@media (min-width: 640px) {
+    .mvp-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 1024px) {
+    .mvp-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.mvp-item {
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 12px;
+    padding: 1.75rem;
+    backdrop-filter: blur(10px);
+    transition: all 0.3s ease;
+}
+
+.mvp-item:hover {
+    background: rgba(255, 255, 255, 0.15);
+    transform: translateY(-2px);
+}
+
+.mvp-item-icon {
+    width: 40px;
+    height: 40px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+.mvp-item-icon svg {
+    width: 20px;
+    height: 20px;
+    color: white;
+    stroke: currentColor;
+}
+
+.mvp-item h3 {
+    font-size: 1.0625rem;
+    font-weight: 600;
+    color: white;
+    margin-bottom: 0.5rem;
+}
+
+.mvp-item p {
+    font-size: 0.875rem;
+    color: rgba(255, 255, 255, 0.85);
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* Startup CTA Section */
+.startup-cta {
+    padding: 5rem 0;
+    background: #ffffff;
+}
+
+.cta-card {
+    background: #f9fafb;
+    border-radius: 20px;
+    padding: 3rem;
+    text-align: center;
+    border: 1px solid #e5e7eb;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.cta-card h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #111827;
+    margin-bottom: 1rem;
+}
+
+.cta-card h2 .text-brand {
+    color: #059669;
+}
+
+.cta-card p {
+    font-size: 1.0625rem;
+    color: #6b7280;
+    margin-bottom: 2rem;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cta-card .cta-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.cta-card .btn-primary-lg {
+    background: linear-gradient(135deg, #059669 0%, #047857 100%);
+    color: white;
+    padding: 1rem 2rem;
+    border-radius: 8px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+
+.cta-card .btn-primary-lg:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 30px rgba(5, 150, 105, 0.3);
+}
+
+.cta-card .btn-outline-lg {
+    background: transparent;
+    color: #059669;
+    border: 2px solid #059669;
+    padding: 1rem 2rem;
+    border-radius: 8px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+
+.cta-card .btn-outline-lg:hover {
+    background: #059669;
+    color: white;
+}
+
+/* Responsive Adjustments */
+@media (min-width: 768px) {
+
+    .intro-content h2,
+    .why-header h2,
+    .process-header h2,
+    .mvp-header h2,
+    .cta-card h2 {
+        font-size: 2.5rem;
+    }
+}
+
+@media (min-width: 1024px) {
+
+    .startup-intro,
+    .why-website,
+    .mvp-process,
+    .mvp-features,
+    .startup-cta {
+        padding: 6rem 0;
+    }
+}
