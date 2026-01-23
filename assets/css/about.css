@@ -377,6 +377,98 @@
 }
 
 /* ======================
+   Industries We Serve Section
+   ====================== */
+.industries-section {
+    padding: 6rem 0;
+    background: linear-gradient(180deg, #ffffff 0%, #f8fafc 50%, #ffffff 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+.industries-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background:
+        radial-gradient(circle at 15% 50%, rgba(20, 184, 166, 0.05) 0%, transparent 50%),
+        radial-gradient(circle at 85% 50%, rgba(6, 182, 212, 0.05) 0%, transparent 50%);
+    pointer-events: none;
+}
+
+.industries-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    max-width: 1280px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 2;
+}
+
+.industry-item,
+.industry-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 2rem 1.5rem;
+    transition: all 0.3s ease;
+}
+
+.industry-item:hover,
+.industry-card:hover {
+    transform: translateY(-4px);
+}
+
+.industry-icon {
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #14B8A6 0%, #06B6D4 100%);
+    margin-bottom: 1rem;
+    flex-shrink: 0;
+    transition: all 0.3s ease;
+    box-shadow: 0 8px 16px rgba(20, 184, 166, 0.25);
+}
+
+.industry-item:hover .industry-icon,
+.industry-card:hover .industry-icon {
+    transform: scale(1.1);
+    box-shadow: 0 12px 24px rgba(20, 184, 166, 0.35);
+}
+
+.industry-icon svg {
+    width: 1.75rem;
+    height: 1.75rem;
+    color: white;
+}
+
+.industry-name,
+.industry-title {
+    font-size: 1rem;
+    font-weight: 700;
+    color: #0f172a;
+    margin: 0;
+    transition: color 0.3s ease;
+}
+
+.industry-item:hover .industry-name,
+.industry-card:hover .industry-title {
+    color: #14B8A6;
+}
+
+.industry-description {
+    display: none;
+}
+
+/* ======================
    CTA Section
    ====================== */
 .cta-section {
@@ -500,6 +592,11 @@
     .services-overview-grid {
         grid-template-columns: repeat(2, 1fr);
     }
+
+    .industries-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.75rem;
+    }
 }
 
 @media (min-width: 768px) {
@@ -517,6 +614,11 @@
 
     .story-text {
         font-size: 1.1875rem;
+    }
+
+    .industries-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
     }
 }
 
@@ -536,10 +638,20 @@
     .services-overview-grid {
         grid-template-columns: repeat(3, 1fr);
     }
+
+    .industries-grid {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 2rem;
+    }
 }
 
 @media (min-width: 1280px) {
     .about-hero .hero-title {
         font-size: 4.5rem;
+    }
+
+    .industries-grid {
+        grid-template-columns: repeat(6, 1fr);
+        gap: 1.5rem;
     }
 }
