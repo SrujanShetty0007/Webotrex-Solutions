@@ -5,19 +5,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
 
 :root {
-    /* Brand Colors */
-    --brand-green: #059669;
-    --brand-green-dark: #047857;
-    --brand-mint: #10b981;
+    /* Brand Colors - Modern Premium Palette */
+    --brand-primary: #4F46E5;
+    --brand-primary-dark: #4338CA;
+    --brand-secondary: #7C3AED;
+    --brand-accent: #06B6D4;
     --brand-deep: #0f172a;
 
-    /* Service Card Colors */
-    --service-blue: #3b82f6;
-    --service-pink: #ec4899;
-    --service-purple: #8b5cf6;
-    --service-cyan: #06b6d4;
-    --service-green: #10b981;
-    --service-orange: #f97316;
+    /* Service Card Colors - Refined Premium Tones */
+    --service-blue: #3B82F6;
+    --service-pink: #EC4899;
+    --service-purple: #8B5CF6;
+    --service-cyan: #06B6D4;
+    --service-indigo: #6366F1;
+    --service-violet: #7C3AED;
 
     /* Neutral Colors */
     --slate-50: #f8fafc;
@@ -95,11 +96,11 @@ button {
 }
 
 .text-accent {
-    color: var(--brand-mint);
+    color: var(--brand-accent);
 }
 
 .text-brand {
-    color: var(--brand-green);
+    color: var(--brand-primary);
 }
 
 .center {
@@ -188,14 +189,14 @@ button {
     transform: translateX(-50%) scaleX(0);
     width: 1.25rem;
     height: 2px;
-    background: linear-gradient(90deg, var(--brand-green), var(--brand-mint));
+    background: linear-gradient(90deg, var(--brand-primary), var(--brand-secondary));
     border-radius: 1px;
     transition: transform 0.25s ease;
 }
 
 .nav-link:hover {
-    color: var(--brand-green);
-    background: rgba(5, 150, 105, 0.06);
+    color: var(--brand-primary);
+    background: rgba(79, 70, 229, 0.06);
 }
 
 .nav-link:hover::after {
@@ -218,8 +219,8 @@ button {
 }
 
 .dropdown-btn:hover {
-    color: var(--brand-green);
-    background: rgba(5, 150, 105, 0.06);
+    color: var(--brand-primary);
+    background: rgba(79, 70, 229, 0.06);
 }
 
 .dropdown-icon {
@@ -269,8 +270,8 @@ button {
 }
 
 .dropdown-item:hover {
-    background: linear-gradient(135deg, rgba(5, 150, 105, 0.08) 0%, rgba(16, 185, 129, 0.06) 100%);
-    color: var(--brand-green);
+    background: linear-gradient(135deg, rgba(79, 70, 229, 0.08) 0%, rgba(124, 58, 237, 0.06) 100%);
+    color: var(--brand-primary);
     transform: translateX(4px);
 }
 
@@ -282,14 +283,14 @@ button {
     padding: 0.75rem 1.5rem;
     font-size: 0.875rem;
     border-radius: 0.75rem;
-    background: linear-gradient(135deg, var(--brand-green) 0%, var(--brand-green-dark) 100%);
-    box-shadow: 0 4px 12px -2px rgba(5, 150, 105, 0.35);
+    background: linear-gradient(135deg, var(--brand-primary) 0%, var(--brand-primary-dark) 100%);
+    box-shadow: 0 4px 12px -2px rgba(79, 70, 229, 0.35);
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .cta-desktop .btn-primary:hover {
     transform: translateY(-2px);
-    box-shadow: 0 8px 20px -4px rgba(5, 150, 105, 0.45);
+    box-shadow: 0 8px 20px -4px rgba(79, 70, 229, 0.45);
 }
 
 .mobile-menu-btn {
@@ -300,8 +301,8 @@ button {
 }
 
 .mobile-menu-btn:hover {
-    background: rgba(5, 150, 105, 0.08);
-    color: var(--brand-green);
+    background: rgba(79, 70, 229, 0.08);
+    color: var(--brand-primary);
 }
 
 .menu-icon {
@@ -314,18 +315,16 @@ button {
     position: fixed;
     top: 0;
     right: -100%;
-    width: 320px;
-    max-width: 85vw;
+    width: 300px;
+    max-width: 80vw;
     height: 100vh;
-    height: 100dvh;
     background: white;
     z-index: 1000;
-    padding: 0;
-    box-shadow: -10px 0 40px rgba(0, 0, 0, 0.15);
-    transition: right 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: -4px 0 20px rgba(0, 0, 0, 0.15);
+    transition: right 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     display: flex;
     flex-direction: column;
-    overflow-y: auto;
+    overflow: hidden;
 }
 
 .mobile-menu:not(.hidden) {
@@ -336,9 +335,10 @@ button {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 1.25rem 1.5rem;
+    padding: 1rem 1.25rem;
     border-bottom: 1px solid rgba(0, 0, 0, 0.08);
-    background: linear-gradient(135deg, var(--brand-green) 0%, var(--brand-green-dark) 100%);
+    background: linear-gradient(135deg, var(--brand-primary) 0%, var(--brand-primary-dark) 100%);
+    flex-shrink: 0;
 }
 
 .mobile-menu-header .logo-link {
@@ -348,30 +348,31 @@ button {
 }
 
 .mobile-menu-header .logo {
-    height: 2rem;
+    height: 1.75rem;
     filter: brightness(0) invert(1);
 }
 
 .mobile-menu-header .logo-text {
     color: white;
-    font-size: 1.125rem;
+    font-size: 1rem;
     font-weight: 700;
     background: none;
     -webkit-text-fill-color: white;
 }
 
 .mobile-menu-close {
-    width: 36px;
-    height: 36px;
+    width: 32px;
+    height: 32px;
     display: flex;
     align-items: center;
     justify-content: center;
     background: rgba(255, 255, 255, 0.2);
     border: none;
-    border-radius: 8px;
+    border-radius: 6px;
     color: white;
     cursor: pointer;
     transition: all 0.2s ease;
+    flex-shrink: 0;
 }
 
 .mobile-menu-close:hover {
@@ -379,33 +380,32 @@ button {
 }
 
 .mobile-menu-close svg {
-    width: 20px;
-    height: 20px;
+    width: 18px;
+    height: 18px;
 }
 
 .mobile-menu-content {
     flex: 1;
-    padding: 1.5rem;
+    padding: 1rem;
     overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
 }
 
 .mobile-menu-link {
-    display: flex;
-    align-items: center;
-    font-size: 1.0625rem;
+    display: block;
+    font-size: 0.9375rem;
     font-weight: 600;
-    padding: 1rem 1.25rem;
+    padding: 0.875rem 1rem;
     color: var(--slate-800);
-    border-radius: 12px;
-    transition: all 0.25s ease;
+    border-radius: 8px;
+    transition: all 0.2s ease;
     margin-bottom: 0.25rem;
-    letter-spacing: -0.01em;
 }
 
-.mobile-menu-link:hover {
-    background: linear-gradient(135deg, rgba(5, 150, 105, 0.1) 0%, rgba(16, 185, 129, 0.08) 100%);
-    color: var(--brand-green);
-    transform: translateX(4px);
+.mobile-menu-link:hover,
+.mobile-menu-link:active {
+    background: rgba(79, 70, 229, 0.08);
+    color: var(--brand-primary);
 }
 
 .mobile-dropdown {
@@ -417,88 +417,91 @@ button {
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    font-size: 1.0625rem;
+    font-size: 0.9375rem;
     font-weight: 600;
-    padding: 1rem 1.25rem;
+    padding: 0.875rem 1rem;
     color: var(--slate-800);
     background: none;
     border: none;
     cursor: pointer;
-    border-radius: 12px;
-    transition: all 0.25s ease;
-    letter-spacing: -0.01em;
+    border-radius: 8px;
+    transition: all 0.2s ease;
+    text-align: left;
 }
 
-.mobile-dropdown-btn:hover {
-    background: linear-gradient(135deg, rgba(5, 150, 105, 0.1) 0%, rgba(16, 185, 129, 0.08) 100%);
-    color: var(--brand-green);
+.mobile-dropdown-btn:hover,
+.mobile-dropdown-btn:active {
+    background: rgba(79, 70, 229, 0.08);
+    color: var(--brand-primary);
 }
 
 .mobile-dropdown-icon {
-    width: 1.25rem;
-    height: 1.25rem;
+    width: 1rem;
+    height: 1rem;
     transition: transform 0.3s ease;
     color: var(--slate-500);
+    flex-shrink: 0;
 }
 
 .mobile-dropdown-btn.active .mobile-dropdown-icon {
     transform: rotate(180deg);
-    color: var(--brand-green);
+    color: var(--brand-primary);
 }
 
 .mobile-dropdown-menu {
-    padding: 0.5rem 0 0.5rem 1rem;
-    margin: 0.25rem 0 0.5rem 0.75rem;
+    padding: 0.25rem 0 0.5rem 0.75rem;
+    margin: 0 0 0.25rem 0.5rem;
     max-height: 0;
     overflow: hidden;
-    transition: max-height 0.4s ease;
-    border-left: 2px solid rgba(5, 150, 105, 0.2);
+    transition: max-height 0.3s ease;
+    border-left: 2px solid rgba(79, 70, 229, 0.2);
 }
 
 .mobile-dropdown-menu:not(.hidden) {
-    max-height: 600px;
+    max-height: 500px;
 }
 
 .mobile-dropdown-item {
     display: block;
-    font-size: 0.9375rem;
+    font-size: 0.875rem;
     font-weight: 500;
-    padding: 0.75rem 1rem;
+    padding: 0.625rem 0.875rem;
     color: var(--slate-600);
-    border-radius: 8px;
-    transition: all 0.25s ease;
+    border-radius: 6px;
+    transition: all 0.2s ease;
     margin-bottom: 0.125rem;
 }
 
-.mobile-dropdown-item:hover {
-    color: var(--brand-green);
-    background: rgba(5, 150, 105, 0.06);
-    transform: translateX(4px);
+.mobile-dropdown-item:hover,
+.mobile-dropdown-item:active {
+    color: var(--brand-primary);
+    background: rgba(79, 70, 229, 0.06);
 }
 
 .mobile-menu-footer {
-    padding: 1.5rem;
+    padding: 1rem 1.25rem;
     border-top: 1px solid rgba(0, 0, 0, 0.08);
     background: var(--slate-50);
+    flex-shrink: 0;
 }
 
 .mobile-menu-cta {
     display: block;
-    background: linear-gradient(135deg, var(--brand-green) 0%, var(--brand-green-dark) 100%);
+    background: linear-gradient(135deg, var(--brand-primary) 0%, var(--brand-primary-dark) 100%);
     color: white;
     text-align: center;
-    padding: 1rem 1.5rem;
-    border-radius: 12px;
+    padding: 0.875rem 1.25rem;
+    border-radius: 8px;
     font-weight: 600;
-    font-size: 1rem;
-    box-shadow: 0 4px 12px -2px rgba(5, 150, 105, 0.35);
+    font-size: 0.9375rem;
+    box-shadow: 0 4px 12px -2px rgba(79, 70, 229, 0.35);
     transition: all 0.3s ease;
-    letter-spacing: -0.01em;
 }
 
-.mobile-menu-cta:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 8px 20px -4px rgba(5, 150, 105, 0.45);
+.mobile-menu-cta:hover,
+.mobile-menu-cta:active {
+    transform: translateY(-1px);
+    box-shadow: 0 6px 16px -4px rgba(79, 70, 229, 0.45);
 }
 
 /* Sidebar Overlay */
@@ -536,26 +539,26 @@ button {
 }
 
 .btn-primary {
-    background-color: var(--brand-green);
+    background-color: var(--brand-primary);
     color: white;
     box-shadow: 0 4px 6px -1px rgba(0, 0, 0, .1), 0 2px 4px -2px rgba(0, 0, 0, .1);
 }
 
 .btn-primary:hover {
-    background-color: var(--brand-green-dark);
+    background-color: var(--brand-primary-dark);
     box-shadow: 0 10px 15px -3px rgba(0, 0, 0, .2), 0 4px 6px -4px rgba(0, 0, 0, .1);
     transform: translateY(-2px);
 }
 
 .btn-accent {
-    background-color: var(--brand-mint);
-    color: var(--brand-deep);
+    background-color: var(--brand-accent);
+    color: white;
     font-weight: 700;
     box-shadow: 0 10px 15px -3px rgba(0, 0, 0, .1), 0 4px 6px -4px rgba(0, 0, 0, .1);
 }
 
 .btn-accent:hover {
-    background-color: #0d9e74;
+    background-color: #0891B2;
 }
 
 .btn-secondary {
@@ -586,7 +589,7 @@ button {
 
 .btn-white {
     background-color: white;
-    color: var(--brand-green);
+    color: var(--brand-primary);
     font-weight: 700;
     padding: 1.25rem 2.5rem;
     box-shadow: 0 20px 25px -5px rgba(0, 0, 0, .1), 0 8px 10px -6px rgba(0, 0, 0, .1);
@@ -597,7 +600,7 @@ button {
 }
 
 .btn-accent-outline {
-    background-color: rgba(16, 185, 129, 0.2);
+    background-color: rgba(6, 182, 212, 0.2);
     border: 2px solid rgba(255, 255, 255, 0.3);
     color: white;
     font-weight: 600;
@@ -606,7 +609,7 @@ button {
 }
 
 .btn-accent-outline:hover {
-    background-color: rgba(16, 185, 129, 0.3);
+    background-color: rgba(6, 182, 212, 0.3);
 }
 
 .btn-lg {
@@ -923,11 +926,11 @@ button {
 }
 
 .service-green {
-    background-color: var(--service-green);
+    background-color: var(--service-indigo);
 }
 
 .service-orange {
-    background-color: var(--service-orange);
+    background-color: var(--service-violet);
 }
 
 .service-icon {
@@ -1021,7 +1024,7 @@ button {
 }
 
 .avatar-green {
-    background: linear-gradient(to bottom right, var(--brand-green), #059669);
+    background: linear-gradient(to bottom right, var(--brand-primary), var(--brand-primary-dark));
 }
 
 .avatar-purple {
@@ -1062,7 +1065,7 @@ button {
    ====================== */
 .cta-section {
     width: 100%;
-    background: linear-gradient(to bottom right, var(--brand-green), var(--brand-green-dark));
+    background: linear-gradient(135deg, var(--brand-primary) 0%, var(--brand-secondary) 50%, var(--brand-primary-dark) 100%);
     color: white;
     padding: var(--section-padding);
     position: relative;
@@ -1094,7 +1097,7 @@ button {
     right: 0;
     width: 24rem;
     height: 24rem;
-    background-color: var(--brand-mint);
+    background-color: var(--brand-accent);
 }
 
 .cta-content {
@@ -1146,7 +1149,7 @@ button {
 .stat-number {
     font-size: 2.25rem;
     font-weight: 900;
-    color: var(--brand-mint);
+    color: var(--brand-accent);
     margin-bottom: 0.5rem;
 }
 
@@ -1228,7 +1231,7 @@ button {
 }
 
 .social-icon:hover {
-    background: var(--brand-green);
+    background: var(--brand-primary);
     color: white;
     transform: translateY(-2px);
 }

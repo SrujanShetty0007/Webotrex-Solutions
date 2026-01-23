@@ -22,14 +22,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
         rel="stylesheet">
 
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/shared-hero.css">
-    <link rel="stylesheet" href="assets/css/legal.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/shared-hero.css">
+    <link rel="stylesheet" href="../assets/css/legal.css">
 
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <!-- Favicons -->
-    <link rel="icon" type="image/png" href="assets/images/favicon-webotrex.png">
+    <link rel="icon" type="image/png" href="../assets/images/favicon-webotrex.png">
 </head>
 
 <body>
@@ -38,14 +38,14 @@
     <!-- Header -->
     <header class="header">
         <nav class="nav-container">
-            <a href="index.html" class="logo-link">
-                <img src="assets/images/Webotrex-logo-transparent.png" alt="Webotrex Logo" class="logo">
+            <a href="../index.html" class="logo-link">
+                <img src="../assets/images/Webotrex-logo-transparent.png" alt="Webotrex Logo" class="logo">
                 <span class="logo-text">Webotrex</span>
             </a>
 
             <div class="nav-menu">
-                <a href="index.html" class="nav-link">Home</a>
-                <a href="about.html" class="nav-link">About</a>
+                <a href="../index.html" class="nav-link">Home</a>
+                <a href="../about.html" class="nav-link">About</a>
                 <div class="dropdown">
                     <button class="dropdown-btn">
                         Services
@@ -65,11 +65,11 @@
                         <a href="startups.html" class="dropdown-item">Websites for Startups</a>
                     </div>
                 </div>
-                <a href="contact.html" class="nav-link">Contact</a>
+                <a href="../contact.html" class="nav-link">Contact</a>
             </div>
 
             <div class="cta-desktop">
-                <a href="contact.html" class="btn btn-primary">Get Started</a>
+                <a href="../contact.html" class="btn btn-primary">Get Started</a>
             </div>
 
             <button id="menu-btn" class="mobile-menu-btn">
@@ -81,29 +81,45 @@
         </nav>
 
         <div id="mobile-menu" class="mobile-menu hidden">
-            <a href="index.html" class="mobile-menu-link">Home</a>
-            <a href="about.html" class="mobile-menu-link">About</a>
-            <div class="mobile-dropdown">
-                <button class="mobile-dropdown-btn" id="mobile-services-btn">
-                    Services
-                    <svg class="mobile-dropdown-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+            <div class="mobile-menu-header">
+                <a href="../index.html" class="logo-link">
+                    <img src="../assets/images/Webotrex-logo-transparent.png" alt="Webotrex Logo" class="logo">
+                    <span class="logo-text">Webotrex</span>
+                </a>
+                <button id="close-menu-btn" class="mobile-menu-close">
+                    <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
                     </svg>
                 </button>
-                <div class="mobile-dropdown-menu hidden" id="mobile-services-menu">
-                    <a href="web-development.html" class="mobile-dropdown-item">Website Development</a>
-                    <a href="web-design.html" class="mobile-dropdown-item">Website Design</a>
-                    <a href="ui-ux.html" class="mobile-dropdown-item">UI/UX Design</a>
-                    <a href="e-commerce.html" class="mobile-dropdown-item">E-Commerce</a>
-                    <a href="seo.html" class="mobile-dropdown-item">SEO Services</a>
-                    <a href="hosting-domain.html" class="mobile-dropdown-item">Hosting & Domain</a>
-                    <a href="corporate-website.html" class="mobile-dropdown-item">Corporate Website</a>
-                    <a href="startups.html" class="mobile-dropdown-item">Websites for Startups</a>
-                </div>
             </div>
-            <a href="contact.html" class="mobile-menu-link">Contact</a>
-            <a href="contact.html" class="mobile-menu-cta">Get Started</a>
+            <div class="mobile-menu-content">
+                <a href="../index.html" class="mobile-menu-link">Home</a>
+                <a href="../about.html" class="mobile-menu-link">About</a>
+                <div class="mobile-dropdown">
+                    <button class="mobile-dropdown-btn" id="mobile-services-btn">
+                        Services
+                        <svg class="mobile-dropdown-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </button>
+                    <div class="mobile-dropdown-menu hidden" id="mobile-services-menu">
+                        <a href="web-development.html" class="mobile-dropdown-item">Website Development</a>
+                        <a href="web-design.html" class="mobile-dropdown-item">Website Design</a>
+                        <a href="ui-ux.html" class="mobile-dropdown-item">UI/UX Design</a>
+                        <a href="e-commerce.html" class="mobile-dropdown-item">E-Commerce</a>
+                        <a href="seo.html" class="mobile-dropdown-item">SEO Services</a>
+                        <a href="hosting-domain.html" class="mobile-dropdown-item">Hosting & Domain</a>
+                        <a href="corporate-website.html" class="mobile-dropdown-item">Corporate Website</a>
+                        <a href="startups.html" class="mobile-dropdown-item">Websites for Startups</a>
+                    </div>
+                </div>
+                <a href="../contact.html" class="mobile-menu-link">Contact</a>
+            </div>
+            <div class="mobile-menu-footer">
+                <a href="../contact.html" class="mobile-menu-cta">Get Started →</a>
+            </div>
         </div>
+        <div id="sidebar-overlay" class="sidebar-overlay"></div>
     </header>
 
     <main id="legal-main" class="legal-main">
@@ -367,8 +383,8 @@
             <div class="container">
                 <div class="footer-content">
                     <div class="footer-col footer-col-brand">
-                        <a href="index.html" class="footer-logo">
-                            <img src="assets/images/Webotrex-logo-transparent.png" alt="Webotrex">
+                        <a href="../index.html" class="footer-logo">
+                            <img src="../assets/images/Webotrex-logo-transparent.png" alt="Webotrex">
                         </a>
                         <p class="footer-tagline">Building digital excellence for businesses across Coastal Karnataka
                         </p>
@@ -402,10 +418,10 @@
                     <div class="footer-col">
                         <h3 class="footer-title">Company</h3>
                         <ul class="footer-list">
-                            <li><a href="index.html">Home</a></li>
-                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="../index.html">Home</a></li>
+                            <li><a href="../about.html">About Us</a></li>
                             <li><a href="index.html#services">Services</a></li>
-                            <li><a href="contact.html">Contact</a></li>
+                            <li><a href="../contact.html">Contact</a></li>
                         </ul>
                     </div>
                     <div class="footer-col">
@@ -462,7 +478,7 @@
         </div>
     </footer>
 
-    <script src="assets/js/main.js"></script>
+    <script src="../assets/js/main.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init({
@@ -567,3 +583,4 @@
 </body>
 
 </html>
+

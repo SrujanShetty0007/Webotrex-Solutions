@@ -56,23 +56,21 @@
                         </svg>
                     </button>
                     <div class="dropdown-menu">
-                        <a href="web-development.html" class="dropdown-item">Website Development</a>
-                        <a href="web-design.html" class="dropdown-item">Website Design</a>
-                        <a href="ui-ux.html" class="dropdown-item">UI/UX Design</a>
-                        <a href="e-commerce.html" class="dropdown-item">E-Commerce</a>
-                        <a href="seo.html" class="dropdown-item">SEO Services</a>
-                        <a href="hosting-domain.html" class="dropdown-item">Hosting & Domain</a>
-                        <a href="corporate-website.html" class="dropdown-item">Corporate Website</a>
-                        <a href="startups.html" class="dropdown-item">Websites for Startups</a>
+                        <a href="pages/web-development.html" class="dropdown-item">Website Development</a>
+                        <a href="pages/web-design.html" class="dropdown-item">Website Design</a>
+                        <a href="pages/ui-ux.html" class="dropdown-item">UI/UX Design</a>
+                        <a href="pages/e-commerce.html" class="dropdown-item">E-Commerce</a>
+                        <a href="pages/seo.html" class="dropdown-item">SEO Services</a>
+                        <a href="pages/hosting-domain.html" class="dropdown-item">Hosting & Domain</a>
+                        <a href="pages/corporate-website.html" class="dropdown-item">Corporate Website</a>
+                        <a href="pages/startups.html" class="dropdown-item">Websites for Startups</a>
                     </div>
                 </div>
                 <a href="contact.html" class="nav-link">Contact</a>
             </div>
 
             <div class="cta-desktop">
-                <a href="contact.html" class="btn btn-primary">
-                    Get Started
-                </a>
+                <a href="contact.html" class="btn btn-primary">Get Started</a>
             </div>
 
             <button id="menu-btn" class="mobile-menu-btn">
@@ -84,29 +82,47 @@
         </nav>
 
         <div id="mobile-menu" class="mobile-menu hidden">
-            <a href="index.html" class="mobile-menu-link">Home</a>
-            <a href="about.html" class="mobile-menu-link">About</a>
-            <div class="mobile-dropdown">
-                <button class="mobile-dropdown-btn" id="mobile-services-btn">
-                    Services
-                    <svg class="mobile-dropdown-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+            <div class="mobile-menu-header">
+                <a href="index.html" class="logo-link">
+                    <img src="assets/images/Webotrex-logo-transparent.png" alt="Webotrex Logo" class="logo">
+                    <span class="logo-text">Webotrex</span>
+                </a>
+                <button id="close-menu-btn" class="mobile-menu-close">
+                    <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12">
+                        </path>
                     </svg>
                 </button>
-                <div class="mobile-dropdown-menu hidden" id="mobile-services-menu">
-                    <a href="web-development.html" class="mobile-dropdown-item">Website Development</a>
-                    <a href="web-design.html" class="mobile-dropdown-item">Website Design</a>
-                    <a href="ui-ux.html" class="mobile-dropdown-item">UI/UX Design</a>
-                    <a href="e-commerce.html" class="mobile-dropdown-item">E-Commerce</a>
-                    <a href="seo.html" class="mobile-dropdown-item">SEO Services</a>
-                    <a href="hosting-domain.html" class="mobile-dropdown-item">Hosting & Domain</a>
-                    <a href="corporate-website.html" class="mobile-dropdown-item">Corporate Website</a>
-                    <a href="startups.html" class="mobile-dropdown-item">Websites for Startups</a>
-                </div>
             </div>
-            <a href="contact.html" class="mobile-menu-link">Contact</a>
-            <a href="contact.html" class="mobile-menu-cta">Get Started</a>
+            <div class="mobile-menu-content">
+                <a href="index.html" class="mobile-menu-link">Home</a>
+                <a href="about.html" class="mobile-menu-link">About</a>
+                <div class="mobile-dropdown">
+                    <button class="mobile-dropdown-btn" id="mobile-services-btn">
+                        Services
+                        <svg class="mobile-dropdown-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7">
+                            </path>
+                        </svg>
+                    </button>
+                    <div class="mobile-dropdown-menu hidden" id="mobile-services-menu">
+                        <a href="pages/web-development.html" class="mobile-dropdown-item">Website Development</a>
+                        <a href="pages/web-design.html" class="mobile-dropdown-item">Website Design</a>
+                        <a href="pages/ui-ux.html" class="mobile-dropdown-item">UI/UX Design</a>
+                        <a href="pages/e-commerce.html" class="mobile-dropdown-item">E-Commerce</a>
+                        <a href="pages/seo.html" class="mobile-dropdown-item">SEO Services</a>
+                        <a href="pages/hosting-domain.html" class="mobile-dropdown-item">Hosting & Domain</a>
+                        <a href="pages/corporate-website.html" class="mobile-dropdown-item">Corporate Website</a>
+                        <a href="pages/startups.html" class="mobile-dropdown-item">Websites for Startups</a>
+                    </div>
+                </div>
+                <a href="contact.html" class="mobile-menu-link">Contact</a>
+            </div>
+            <div class="mobile-menu-footer">
+                <a href="contact.html" class="mobile-menu-cta">Get Started →</a>
+            </div>
         </div>
+        <div id="sidebar-overlay" class="sidebar-overlay"></div>
     </header>
 
     <main>
@@ -344,13 +360,13 @@
                     <div class="footer-col">
                         <h3 class="footer-title">Services</h3>
                         <ul class="footer-list">
-                            <li><a href="web-development.html">Web Development</a></li>
-                            <li><a href="web-design.html">Web Design</a></li>
-                            <li><a href="ui-ux.html">UI/UX Design</a></li>
-                            <li><a href="e-commerce.html">E-Commerce</a></li>
-                            <li><a href="seo.html">SEO Services</a></li>
-                            <li><a href="hosting-domain.html">Hosting & Domain</a></li>
-                            <li><a href="corporate-website.html">Corporate Website</a></li>
+                            <li><a href="pages/web-development.html">Web Development</a></li>
+                            <li><a href="pages/web-design.html">Web Design</a></li>
+                            <li><a href="pages/ui-ux.html">UI/UX Design</a></li>
+                            <li><a href="pages/e-commerce.html">E-Commerce</a></li>
+                            <li><a href="pages/seo.html">SEO Services</a></li>
+                            <li><a href="pages/hosting-domain.html">Hosting & Domain</a></li>
+                            <li><a href="pages/corporate-website.html">Corporate Website</a></li>
                         </ul>
                     </div>
 
@@ -393,8 +409,8 @@
                 <div class="footer-bottom-content">
                     <p class="footer-copyright">© 2025 Webotrex. All rights reserved.</p>
                     <div class="footer-legal-links">
-                        <a href="privacy-policy.html">Privacy Policy</a>
-                        <a href="terms-of-service.html">Terms of Service</a>
+                        <a href="pages/privacy-policy.html">Privacy Policy</a>
+                        <a href="pages/terms-of-service.html">Terms of Service</a>
                     </div>
                 </div>
             </div>
