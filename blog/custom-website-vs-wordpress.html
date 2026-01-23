@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-WDTRD62PV1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-WDTRD62PV1');
+    </script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Website vs WordPress – What's Better for Small Businesses?</title>
+    <meta name="description"
+        content="Comparing custom websites and WordPress for small businesses. Learn the pros, cons, costs, and which option delivers better long-term value for your business.">
+
+    <!-- Favicons -->
+    <link rel="icon" type="image/png" href="../assets/images/favicon-webotrex.png">
+    <link rel="apple-touch-icon" href="../assets/images/favicon-webotrex.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/blog.css">
+
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <header class="header">
+        <nav class="nav-container">
+            <a href="../index.html" class="logo-link">
+                <img src="../assets/images/Webotrex-logo-transparent.png" alt="Webotrex Logo" class="logo">
+                <span class="logo-text">Webotrex</span>
+            </a>
+
+            <div class="nav-menu">
+                <a href="../index.html" class="nav-link">Home</a>
+                <a href="../about.html" class="nav-link">About</a>
+                <div class="dropdown">
+                    <button class="dropdown-btn">
+                        Services
+                        <svg class="dropdown-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7">
+                            </path>
+                        </svg>
+                    </button>
+                    <div class="dropdown-menu">
+                        <a href="../pages/web-development.html" class="dropdown-item">Website Development</a>
+                        <a href="../pages/web-design.html" class="dropdown-item">Website Design</a>
+                        <a href="../pages/ui-ux.html" class="dropdown-item">UI/UX Design</a>
+                        <a href="../pages/e-commerce.html" class="dropdown-item">E-Commerce</a>
+                        <a href="../pages/seo.html" class="dropdown-item">SEO Services</a>
+                        <a href="../pages/hosting-domain.html" class="dropdown-item">Hosting & Domain</a>
+                        <a href="../pages/corporate-website.html" class="dropdown-item">Corporate Website</a>
+                        <a href="../pages/startups.html" class="dropdown-item">Websites for Startups</a>
+                    </div>
+                </div>
+                <a href="../blog.html" class="nav-link">Blog</a>
+                <a href="../contact.html" class="nav-link">Contact</a>
+            </div>
+
+            <div class="cta-desktop">
+                <a href="../contact.html" class="btn btn-primary">Get Started</a>
+            </div>
+
+            <button id="menu-btn" class="mobile-menu-btn">
+                <svg class="menu-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16">
+                    </path>
+                </svg>
+            </button>
+        </nav>
+
+        <div id="mobile-menu" class="mobile-menu hidden">
+            <div class="mobile-menu-header">
+                <a href="../index.html" class="logo-link">
+                    <img src="../assets/images/Webotrex-logo-transparent.png" alt="Webotrex Logo" class="logo">
+                    <span class="logo-text">Webotrex</span>
+                </a>
+                <button id="close-menu-btn" class="mobile-menu-close">
+                    <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12">
+                        </path>
+                    </svg>
+                </button>
+            </div>
+            <div class="mobile-menu-content">
+                <a href="../contact.html" class="mobile-menu-cta-top">Get Started →</a>
+                <a href="../index.html" class="mobile-menu-link">Home</a>
+                <a href="../about.html" class="mobile-menu-link">About</a>
+                <div class="mobile-dropdown">
+                    <button class="mobile-dropdown-btn" id="mobile-services-btn">
+                        Services
+                        <svg class="mobile-dropdown-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7">
+                            </path>
+                        </svg>
+                    </button>
+                    <div class="mobile-dropdown-menu hidden" id="mobile-services-menu">
+                        <a href="../pages/web-development.html" class="mobile-dropdown-item">Website Development</a>
+                        <a href="../pages/web-design.html" class="mobile-dropdown-item">Website Design</a>
+                        <a href="../pages/ui-ux.html" class="mobile-dropdown-item">UI/UX Design</a>
+                        <a href="../pages/e-commerce.html" class="mobile-dropdown-item">E-Commerce</a>
+                        <a href="../pages/seo.html" class="mobile-dropdown-item">SEO Services</a>
+                        <a href="../pages/hosting-domain.html" class="mobile-dropdown-item">Hosting & Domain</a>
+                        <a href="../pages/corporate-website.html" class="mobile-dropdown-item">Corporate Website</a>
+                        <a href="../pages/startups.html" class="mobile-dropdown-item">Websites for Startups</a>
+                    </div>
+                </div>
+                <a href="../blog.html" class="mobile-menu-link">Blog</a>
+                <a href="../contact.html" class="mobile-menu-link">Contact</a>
+            </div>
+        </div>
+        <div id="sidebar-overlay" class="sidebar-overlay"></div>
+    </header>
+
+    <main>
+        <!-- Blog Hero Section -->
+        <section class="blog-hero">
+            <div class="container">
+                <div class="blog-hero-content">
+                    <div class="blog-meta">
+                        <span class="blog-category">Website Development</span>
+                        <span class="blog-date">January 24, 2026</span>
+                    </div>
+                    <h1 class="blog-title">Custom Website vs WordPress – What's Better for Small Businesses?</h1>
+                    <p class="blog-excerpt">A practical comparison to help you choose the right website solution for
+                        your business needs and budget.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Blog Content -->
+        <article class="blog-article">
+            <div class="container">
+                <a href="../blog.html" class="back-to-blog">
+                    <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7">
+                        </path>
+                    </svg>
+                    Back to Blog
+                </a>
+                <div class="blog-content">
+
+                    <!-- Introduction -->
+                    <section class="blog-section">
+                        <p class="lead-paragraph">
+                            When small business owners decide to build a website, one of the first questions they face
+                            is: "Should I use WordPress or get a custom-built website?"
+                        </p>
+                        <p>
+                            It's a valid question, and the answer isn't always straightforward. WordPress is popular,
+                            widely used, and seems like the obvious choice. But custom websites offer advantages that
+                            many business owners don't realize until it's too late.
+                        </p>
+                        <p>
+                            In this article, we'll break down both options clearly, compare them side-by-side, and help
+                            you make the right decision for your business. No technical jargon, just practical insights.
+                        </p>
+                    </section>
+
+                    <!-- Section 1: What Is WordPress -->
+                    <section class="blog-section">
+                        <h2>What Is a WordPress Website?</h2>
+                        <p>
+                            WordPress is a content management system (CMS) that powers about 43% of all websites on the
+                            internet. It's an open-source platform that allows you to build websites using pre-made
+                            themes and plugins.
+                        </p>
+                        <p>
+                            Think of it like building with LEGO blocks. You pick a theme (the design), add plugins
+                            (features like contact forms or galleries), and customize it to fit your needs. It's
+                            user-friendly and doesn't require coding knowledge to get started.
+                        </p>
+
+                        <h3>Pros of WordPress</h3>
+                        <ul class="blog-list">
+                            <li><strong>Easy to use:</strong> You can manage content without technical skills</li>
+                            <li><strong>Large community:</strong> Thousands of themes and plugins available</li>
+                            <li><strong>Lower initial cost:</strong> Many free themes and plugins to start with</li>
+                            <li><strong>Quick setup:</strong> Can launch a basic site in days</li>
+                        </ul>
+
+                        <h3>Cons of WordPress</h3>
+                        <ul class="blog-list">
+                            <li><strong>Security vulnerabilities:</strong> Popular target for hackers due to widespread
+                                use</li>
+                            <li><strong>Performance issues:</strong> Plugins and themes can slow down your site
+                                significantly</li>
+                            <li><strong>Maintenance burden:</strong> Constant updates required for core, themes, and
+                                plugins</li>
+                            <li><strong>Plugin conflicts:</strong> Different plugins can break your site when they don't
+                                work together</li>
+                            <li><strong>Hidden costs:</strong> Premium themes, plugins, and maintenance add up quickly
+                            </li>
+                            <li><strong>Generic design:</strong> Your site may look similar to thousands of others using
+                                the same theme</li>
+                        </ul>
+                    </section>
+
+                    <!-- Section 2: What Is Custom Website -->
+                    <section class="blog-section">
+                        <h2>What Is a Custom-Built Website?</h2>
+                        <p>
+                            A custom website is built from scratch specifically for your business. Instead of using
+                            pre-made templates, developers write clean code tailored to your exact requirements, brand
+                            identity, and business goals.
+                        </p>
+                        <p>
+                            Think of it like getting a tailored suit versus buying one off the rack. It's designed to
+                            fit you perfectly, with no unnecessary features or bloated code.
+                        </p>
+
+                        <h3>Pros of Custom Websites</h3>
+                        <ul class="blog-list">
+                            <li><strong>Superior performance:</strong> Clean code means faster loading speeds</li>
+                            <li><strong>Better security:</strong> No common vulnerabilities that hackers target</li>
+                            <li><strong>Unique design:</strong> Your website looks exactly how you want it, not like a
+                                template</li>
+                            <li><strong>Scalability:</strong> Easy to add features as your business grows</li>
+                            <li><strong>SEO advantages:</strong> Optimized code structure helps with search rankings
+                            </li>
+                            <li><strong>No plugin dependency:</strong> Features are built-in, not bolted on</li>
+                            <li><strong>Lower long-term costs:</strong> Minimal maintenance and no recurring plugin fees
+                            </li>
+                        </ul>
+
+                        <h3>Cons of Custom Websites</h3>
+                        <ul class="blog-list">
+                            <li><strong>Higher upfront cost:</strong> Professional development requires investment</li>
+                            <li><strong>Longer development time:</strong> Building from scratch takes more time than
+                                installing a theme</li>
+                            <li><strong>Requires professional help:</strong> You need a developer for changes (though
+                                this ensures quality)</li>
+                        </ul>
+                    </section>
+
+                    <!-- Section 3: Comparison Table -->
+                    <section class="blog-section">
+                        <h2>WordPress vs Custom Website – Side-by-Side Comparison</h2>
+                        <p>
+                            Here's a practical comparison to help you understand the real differences:
+                        </p>
+
+                        <div class="comparison-table">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Factor</th>
+                                        <th>WordPress</th>
+                                        <th>Custom Website</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><strong>Speed</strong></td>
+                                        <td>Often slow due to plugins and bloated themes</td>
+                                        <td>Fast – optimized clean code</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Initial Cost</strong></td>
+                                        <td>Lower (₹10,000 - ₹30,000)</td>
+                                        <td>Higher (₹30,000 - ₹80,000+)</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Long-term Cost</strong></td>
+                                        <td>Higher (plugins, maintenance, updates)</td>
+                                        <td>Lower (minimal maintenance)</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Security</strong></td>
+                                        <td>Vulnerable – frequent security patches needed</td>
+                                        <td>Secure – no common vulnerabilities</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>SEO</strong></td>
+                                        <td>Good with plugins, but code can be bloated</td>
+                                        <td>Excellent – clean, optimized structure</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Customization</strong></td>
+                                        <td>Limited by theme and plugin capabilities</td>
+                                        <td>Unlimited – built exactly to your needs</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Maintenance</strong></td>
+                                        <td>High – constant updates required</td>
+                                        <td>Low – stable and reliable</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Uniqueness</strong></td>
+                                        <td>Generic – looks like other sites</td>
+                                        <td>Unique – one-of-a-kind design</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Setup Time</strong></td>
+                                        <td>Quick (1-2 weeks)</td>
+                                        <td>Longer (3-6 weeks)</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </section>
+
+                    <!-- Section 4: Which Is Better -->
+                    <section class="blog-section">
+                        <h2>Which Option Is Better for Small Businesses?</h2>
+                        <p>
+                            The answer depends on your specific situation. Here's practical guidance:
+                        </p>
+
+                        <h3>Choose WordPress If:</h3>
+                        <ul class="blog-list">
+                            <li>You need a very basic website quickly</li>
+                            <li>You're on an extremely tight budget</li>
+                            <li>You want to manage content yourself frequently</li>
+                            <li>You're comfortable dealing with technical issues</li>
+                        </ul>
+
+                        <h3>Choose a Custom Website If:</h3>
+                        <ul class="blog-list">
+                            <li>You want a professional, unique online presence</li>
+                            <li>Speed and performance matter to your business</li>
+                            <li>You're serious about SEO and search rankings</li>
+                            <li>You want lower long-term costs</li>
+                            <li>Security is important (especially for e-commerce or client data)</li>
+                            <li>You want a website that grows with your business</li>
+                        </ul>
+
+                        <p>
+                            For most small businesses that are serious about their online presence, a custom website is
+                            the better long-term investment. Yes, it costs more upfront, but it pays for itself through
+                            better performance, lower maintenance, and higher conversion rates.
+                        </p>
+                    </section>
+
+                    <!-- Section 5: Long-term Cost -->
+                    <section class="blog-section">
+                        <h2>The Long-Term Cost Perspective</h2>
+                        <p>
+                            Here's what many business owners don't realize: WordPress might seem cheaper initially, but
+                            the costs add up quickly.
+                        </p>
+
+                        <h3>Hidden WordPress Costs:</h3>
+                        <ul class="blog-list">
+                            <li>Premium theme: ₹3,000 - ₹8,000/year</li>
+                            <li>Essential plugins: ₹5,000 - ₹15,000/year</li>
+                            <li>Security plugin: ₹3,000 - ₹10,000/year</li>
+                            <li>Backup service: ₹2,000 - ₹5,000/year</li>
+                            <li>Maintenance and updates: ₹10,000 - ₹25,000/year</li>
+                            <li>Fixing broken plugins: ₹5,000 - ₹20,000 when issues arise</li>
+                        </ul>
+
+                        <p>
+                            <strong>Total annual cost:</strong> ₹28,000 - ₹83,000 per year, every year.
+                        </p>
+
+                        <h3>Custom Website Costs:</h3>
+                        <ul class="blog-list">
+                            <li>One-time development: ₹30,000 - ₹80,000</li>
+                            <li>Annual maintenance: ₹5,000 - ₹15,000/year</li>
+                            <li>Hosting: ₹3,000 - ₹8,000/year</li>
+                        </ul>
+
+                        <p>
+                            <strong>Total annual cost after first year:</strong> ₹8,000 - ₹23,000 per year.
+                        </p>
+
+                        <p>
+                            Do the math: After 2-3 years, a custom website becomes significantly cheaper than WordPress,
+                            while delivering better performance, security, and results.
+                        </p>
+                    </section>
+
+                    <!-- Conclusion -->
+                    <section class="blog-section">
+                        <h2>The Bottom Line</h2>
+                        <p>
+                            The custom website vs WordPress debate isn't about which is "better" in absolute terms—it's
+                            about which is better for your specific business needs.
+                        </p>
+                        <p>
+                            WordPress works for hobby blogs and very basic websites. But if you're running a serious
+                            business and want a professional online presence that actually drives results, a
+                            custom-built website is the smarter investment.
+                        </p>
+                        <p>
+                            You get better performance, stronger security, unique design, superior SEO, and lower
+                            long-term costs. Most importantly, you get a website that's built specifically for your
+                            business goals, not adapted from a generic template.
+                        </p>
+                        <p>
+                            At Webotrex, we've seen countless businesses migrate from WordPress to custom solutions
+                            after experiencing the limitations firsthand. The transition is always worth it—better
+                            speed, fewer headaches, and websites that actually convert visitors into customers.
+                        </p>
+                    </section>
+
+                    <!-- Related Articles -->
+                    <section class="related-articles">
+                        <h2 class="related-articles-title">Related Articles</h2>
+                        <div class="related-articles-grid">
+                            <article class="related-article-card">
+                                <span class="related-article-category">Business Strategy</span>
+                                <h3 class="related-article-title">
+                                    <a href="do-local-businesses-need-a-website-in-2026.html">
+                                        Do Local Businesses Really Need a Website in 2026?
+                                    </a>
+                                </h3>
+                            </article>
+                        </div>
+                    </section>
+
+                </div>
+            </div>
+        </article>
+
+        <!-- Blog CTA Section -->
+        <section class="blog-cta-section">
+            <div class="container">
+                <div class="blog-cta-content">
+                    <h2 class="blog-cta-title">Ready to Build a Professional Custom Website?</h2>
+                    <p class="blog-cta-description">
+                        Webotrex specializes in building fast, secure, and SEO-optimized custom websites for small
+                        businesses across Coastal Karnataka.
+                        No templates, no plugins, no bloat—just clean code that delivers results.
+                    </p>
+                    <div class="blog-cta-buttons">
+                        <a href="../pages/web-development.html" class="btn btn-primary btn-lg">View Our Services</a>
+                        <a href="../contact.html" class="btn btn-secondary btn-lg">Get a Free Quote</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="footer-main">
+            <div class="container">
+                <div class="footer-content">
+                    <!-- Brand Column -->
+                    <div class="footer-col footer-col-brand">
+                        <a href="../index.html" class="footer-logo">
+                            <img src="../assets/images/Webotrex-logo-transparent.png" alt="Webotrex">
+                        </a>
+                        <p class="footer-tagline">Building digital excellence for businesses across Coastal Karnataka
+                        </p>
+                        <div class="footer-social">
+                            <a href="#" class="social-icon" aria-label="Instagram">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path
+                                        d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2m-.2 2A3.6 3.6 0 0 0 4 7.6v8.8C4 18.39 5.61 20 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6C20 5.61 18.39 4 16.4 4H7.6m9.65 1.5a1.25 1.25 0 0 1 1.25 1.25A1.25 1.25 0 0 1 17.25 8 1.25 1.25 0 0 1 16 6.75a1.25 1.25 0 0 1 1.25-1.25M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3z" />
+                                </svg>
+                            </a>
+                            <a href="#" class="social-icon" aria-label="LinkedIn">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path
+                                        d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+                                </svg>
+                            </a>
+                            <a href="#" class="social-icon" aria-label="Twitter">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path
+                                        d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+                                </svg>
+                            </a>
+                            <a href="#" class="social-icon" aria-label="Facebook">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path
+                                        d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Quick Links -->
+                    <div class="footer-col">
+                        <h3 class="footer-title">Company</h3>
+                        <ul class="footer-list">
+                            <li><a href="../index.html">Home</a></li>
+                            <li><a href="../about.html">About Us</a></li>
+                            <li><a href="../index.html#services">Services</a></li>
+                            <li><a href="../blog.html">Blog</a></li>
+                            <li><a href="../contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Services -->
+                    <div class="footer-col">
+                        <h3 class="footer-title">Services</h3>
+                        <ul class="footer-list">
+                            <li><a href="../pages/web-development.html">Web Development</a></li>
+                            <li><a href="../pages/web-design.html">Web Design</a></li>
+                            <li><a href="../pages/ui-ux.html">UI/UX Design</a></li>
+                            <li><a href="../pages/e-commerce.html">E-Commerce</a></li>
+                            <li><a href="../pages/seo.html">SEO Services</a></li>
+                            <li><a href="../pages/hosting-domain.html">Hosting & Domain</a></li>
+                            <li><a href="../pages/corporate-website.html">Corporate Website</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Contact Info -->
+                    <div class="footer-col">
+                        <h3 class="footer-title">Contact</h3>
+                        <ul class="footer-contact-list">
+                            <li>
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                                </svg>
+                                <span>Kundapura, Udupi<br>Karnataka 576217</span>
+                            </li>
+                            <li>
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                                </svg>
+                                <a href="tel:+918217358117">+91 8217358117</a>
+                            </li>
+                            <li>
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                                </svg>
+                                <a href="mailto:webotrexsolutions@gmail.com">webotrexsolutions@gmail.com</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer Bottom -->
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="footer-bottom-content">
+                    <p class="footer-copyright">© 2025 Webotrex. All rights reserved.</p>
+                    <div class="footer-legal-links">
+                        <a href="../pages/privacy-policy.html">Privacy Policy</a>
+                        <a href="../pages/terms-of-service.html">Terms of Service</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../assets/js/script.js"></script>
+
+    <!-- AOS Animation Library -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            once: true,
+            offset: 100
+        });
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-WDTRD62PV1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-WDTRD62PV1');
+    </script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Do Local Businesses Really Need a Website in 2026? | Webotrex Blog</title>
+    <meta name="description"
+        content="Discover why local businesses in 2026 still need a website despite social media. Learn about ownership, trust, SEO, and customer behavior changes that make websites essential for growth.">
+
+    <!-- Favicons -->
+    <link rel="icon" type="image/png" href="../assets/images/favicon-webotrex.png">
+    <link rel="apple-touch-icon" href="../assets/images/favicon-webotrex.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/blog.css">
+
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <header class="header">
+        <nav class="nav-container">
+            <a href="../index.html" class="logo-link">
+                <img src="../assets/images/Webotrex-logo-transparent.png" alt="Webotrex Logo" class="logo">
+                <span class="logo-text">Webotrex</span>
+            </a>
+
+            <div class="nav-menu">
+                <a href="../index.html" class="nav-link">Home</a>
+                <a href="../about.html" class="nav-link">About</a>
+                <div class="dropdown">
+                    <button class="dropdown-btn">
+                        Services
+                        <svg class="dropdown-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7">
+                            </path>
+                        </svg>
+                    </button>
+                    <div class="dropdown-menu">
+                        <a href="../pages/web-development.html" class="dropdown-item">Website Development</a>
+                        <a href="../pages/web-design.html" class="dropdown-item">Website Design</a>
+                        <a href="../pages/ui-ux.html" class="dropdown-item">UI/UX Design</a>
+                        <a href="../pages/e-commerce.html" class="dropdown-item">E-Commerce</a>
+                        <a href="../pages/seo.html" class="dropdown-item">SEO Services</a>
+                        <a href="../pages/hosting-domain.html" class="dropdown-item">Hosting & Domain</a>
+                        <a href="../pages/corporate-website.html" class="dropdown-item">Corporate Website</a>
+                        <a href="../pages/startups.html" class="dropdown-item">Websites for Startups</a>
+                    </div>
+                </div>
+                <a href="../blog.html" class="nav-link">Blog</a>
+                <a href="../contact.html" class="nav-link">Contact</a>
+            </div>
+
+            <div class="cta-desktop">
+                <a href="../contact.html" class="btn btn-primary">Get Started</a>
+            </div>
+
+            <button id="menu-btn" class="mobile-menu-btn">
+                <svg class="menu-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16">
+                    </path>
+                </svg>
+            </button>
+        </nav>
+
+        <div id="mobile-menu" class="mobile-menu hidden">
+            <div class="mobile-menu-header">
+                <a href="../index.html" class="logo-link">
+                    <img src="../assets/images/Webotrex-logo-transparent.png" alt="Webotrex Logo" class="logo">
+                    <span class="logo-text">Webotrex</span>
+                </a>
+                <button id="close-menu-btn" class="mobile-menu-close">
+                    <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12">
+                        </path>
+                    </svg>
+                </button>
+            </div>
+            <div class="mobile-menu-content">
+                <a href="../contact.html" class="mobile-menu-cta-top">Get Started →</a>
+                <a href="../index.html" class="mobile-menu-link">Home</a>
+                <a href="../about.html" class="mobile-menu-link">About</a>
+                <div class="mobile-dropdown">
+                    <button class="mobile-dropdown-btn" id="mobile-services-btn">
+                        Services
+                        <svg class="mobile-dropdown-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7">
+                            </path>
+                        </svg>
+                    </button>
+                    <div class="mobile-dropdown-menu hidden" id="mobile-services-menu">
+                        <a href="../pages/web-development.html" class="mobile-dropdown-item">Website Development</a>
+                        <a href="../pages/web-design.html" class="mobile-dropdown-item">Website Design</a>
+                        <a href="../pages/ui-ux.html" class="mobile-dropdown-item">UI/UX Design</a>
+                        <a href="../pages/e-commerce.html" class="mobile-dropdown-item">E-Commerce</a>
+                        <a href="../pages/seo.html" class="mobile-dropdown-item">SEO Services</a>
+                        <a href="../pages/hosting-domain.html" class="mobile-dropdown-item">Hosting & Domain</a>
+                        <a href="../pages/corporate-website.html" class="mobile-dropdown-item">Corporate Website</a>
+                        <a href="../pages/startups.html" class="mobile-dropdown-item">Websites for Startups</a>
+                    </div>
+                </div>
+                <a href="../blog.html" class="mobile-menu-link">Blog</a>
+                <a href="../contact.html" class="mobile-menu-link">Contact</a>
+            </div>
+        </div>
+        <div id="sidebar-overlay" class="sidebar-overlay"></div>
+    </header>
+
+    <main>
+        <!-- Blog Hero Section -->
+        <section class="blog-hero">
+            <div class="container">
+                <div class="blog-hero-content">
+                    <div class="blog-meta">
+                        <span class="blog-category">Business Strategy</span>
+                        <span class="blog-date">January 24, 2026</span>
+                    </div>
+                    <h1 class="blog-title">Do Local Businesses Really Need a Website in 2026?</h1>
+                    <p class="blog-excerpt">Why having a website is still essential for local businesses despite the
+                        rise of social media platforms.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Blog Content -->
+        <article class="blog-article">
+            <div class="container">
+                <a href="../blog.html" class="back-to-blog">
+                    <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7">
+                        </path>
+                    </svg>
+                    Back to Blog
+                </a>
+                <div class="blog-content">
+
+                    <!-- Introduction -->
+                    <section class="blog-section">
+                        <p class="lead-paragraph">
+                            In 2026, this question still comes up surprisingly often. With Instagram, Facebook, and
+                            WhatsApp being so popular, many local business owners wonder: "Do I really need a website?
+                            Can't I just use social media?"
+                        </p>
+                        <p>
+                            It's a fair question. Social media is free, easy to set up, and your customers are already
+                            there. But here's the reality: while social media is important, it's not a replacement for a
+                            website. In fact, businesses that rely only on social media are leaving money on the table
+                            and missing out on serious customers.
+                        </p>
+                        <p>
+                            Let's break down why a website still matters in 2026, and more importantly, what kind of
+                            website actually works for local businesses today.
+                        </p>
+                    </section>
+
+                    <!-- Section 1 -->
+                    <section class="blog-section">
+                        <h2>Social Media vs Website: What's the Real Difference?</h2>
+                        <p>
+                            The biggest difference between social media and a website comes down to one word:
+                            <strong>ownership</strong>.
+                        </p>
+                        <p>
+                            When you build your business on Instagram or Facebook, you're essentially renting space on
+                            someone else's platform. The rules can change overnight. Your account can get restricted.
+                            The algorithm can decide to show your posts to fewer people. You have zero control.
+                        </p>
+                        <p>
+                            A website, on the other hand, is <strong>yours</strong>. You own it. You control it. No one
+                            can take it away or change the rules on you.
+                        </p>
+
+                        <h3>Trust and Credibility</h3>
+                        <p>
+                            Here's something most business owners don't realize: when potential customers are deciding
+                            whether to trust you with their money, they Google you. Not Instagram you. Not Facebook you.
+                            They <strong>Google</strong> you.
+                        </p>
+                        <p>
+                            And if you don't have a website, you immediately look less professional than your
+                            competitors who do. It's that simple. In 2026, not having a website sends the message that
+                            you're either not serious about your business or you're behind the times.
+                        </p>
+
+                        <h3>Search Visibility</h3>
+                        <p>
+                            Social media posts disappear into the void after a few days. But a website? It stays visible
+                            on Google for years. When someone in your area searches for "best cafe near me" or "plumber
+                            in Kundapura," your website can show up. Your Instagram post won't.
+                        </p>
+                        <p>
+                            This is called <strong>SEO</strong> (Search Engine Optimization), and it's how businesses
+                            get found by customers who are actively looking for what they offer. Social media can't do
+                            this for you.
+                        </p>
+                    </section>
+
+                    <!-- Section 2 -->
+                    <section class="blog-section">
+                        <h2>How Customer Behavior Has Changed in 2026</h2>
+                        <p>
+                            Let's talk about how people actually make buying decisions in 2026. The process usually
+                            looks like this:
+                        </p>
+                        <ol class="blog-list">
+                            <li><strong>Discovery:</strong> They hear about your business (from a friend, social media,
+                                or an ad)</li>
+                            <li><strong>Research:</strong> They Google your business name to learn more</li>
+                            <li><strong>Trust Check:</strong> They look at your website, reviews, and online presence
+                            </li>
+                            <li><strong>Decision:</strong> They decide whether to contact you or visit your location
+                            </li>
+                        </ol>
+                        <p>
+                            Notice step 2? They Google you. If you don't have a website, you're failing the trust check
+                            before they even contact you.
+                        </p>
+                        <p>
+                            Here's what happens when someone Googles your business and finds only a Facebook page:
+                        </p>
+                        <ul class="blog-list">
+                            <li>They can't easily find your phone number or address</li>
+                            <li>They can't see your full menu, services, or pricing</li>
+                            <li>They can't book appointments or make inquiries easily</li>
+                            <li>They wonder if you're a legitimate business</li>
+                        </ul>
+                        <p>
+                            Meanwhile, your competitor with a clean, professional website gets the customer. It's that
+                            simple.
+                        </p>
+                    </section>
+
+                    <!-- Section 3 -->
+                    <section class="blog-section">
+                        <h2>Which Local Businesses Absolutely Need a Website</h2>
+                        <p>
+                            Let's be practical. Not every business needs the same kind of website, but here are the
+                            types of local businesses that absolutely need one:
+                        </p>
+
+                        <h3>Restaurants and Cafes</h3>
+                        <p>
+                            People want to see your menu, check your hours, and know your location before they visit. A
+                            website makes this easy. Plus, you can take online orders and reservations directly through
+                            your site.
+                        </p>
+
+                        <h3>Hotels and Homestays</h3>
+                        <p>
+                            If you're in hospitality, a website isn't optional—it's essential. Customers need to see
+                            photos, check availability, compare prices, and book rooms. Relying only on booking
+                            platforms means paying high commissions forever.
+                        </p>
+
+                        <h3>Service Businesses</h3>
+                        <p>
+                            Plumbers, electricians, consultants, lawyers, accountants—if you provide a service, you need
+                            a website. Why? Because people research service providers carefully before hiring them. Your
+                            website is your digital business card and portfolio combined.
+                        </p>
+
+                        <h3>Healthcare and Clinics</h3>
+                        <p>
+                            Patients Google doctors and clinics before booking appointments. They want to know your
+                            qualifications, services, timings, and how to reach you. A professional website builds trust
+                            and makes it easy for patients to find you.
+                        </p>
+
+                        <h3>Retail and E-commerce</h3>
+                        <p>
+                            If you sell products, having an online store on your own website means you keep 100% of the
+                            profit. No marketplace fees, no commission cuts. Plus, you own the customer relationship and
+                            can market to them directly.
+                        </p>
+                    </section>
+
+                    <!-- Section 4 -->
+                    <section class="blog-section">
+                        <h2>What Kind of Website Works in 2026 (And What Doesn't)</h2>
+                        <p>
+                            Here's the thing: not all websites are created equal. In 2026, customers expect certain
+                            things from a business website, and if yours doesn't deliver, it's almost worse than not
+                            having one at all.
+                        </p>
+
+                        <h3>What Works:</h3>
+                        <ul class="blog-list">
+                            <li><strong>Fast Loading:</strong> Your website should load in under 3 seconds. Anything
+                                slower and people leave.</li>
+                            <li><strong>Mobile-Friendly:</strong> Most people will visit your site on their phone. If it
+                                doesn't work well on mobile, you've lost them.</li>
+                            <li><strong>Clear Information:</strong> Phone number, address, hours, services—make it easy
+                                to find.</li>
+                            <li><strong>Simple Navigation:</strong> Don't make people hunt for information. Keep it
+                                clean and organized.</li>
+                            <li><strong>Call-to-Action:</strong> Make it obvious what you want visitors to do (call,
+                                book, buy, contact).</li>
+                        </ul>
+
+                        <h3>What Doesn't Work:</h3>
+                        <ul class="blog-list">
+                            <li><strong>Slow, Bloated Websites:</strong> Built with heavy page builders that take
+                                forever to load.</li>
+                            <li><strong>Outdated Design:</strong> If your website looks like it's from 2010, it hurts
+                                your credibility.</li>
+                            <li><strong>Complicated Navigation:</strong> Too many pages, confusing menus, hidden contact
+                                information.</li>
+                            <li><strong>No Mobile Optimization:</strong> Websites that don't work properly on phones.
+                            </li>
+                            <li><strong>Generic Templates:</strong> Cookie-cutter designs that look like everyone else's
+                                site.</li>
+                        </ul>
+
+                        <p>
+                            The good news? You don't need a complicated, expensive website. You need a <strong>simple,
+                                fast, conversion-focused website</strong> that does its job: turning visitors into
+                            customers.
+                        </p>
+                    </section>
+
+                    <!-- Section 5 -->
+                    <section class="blog-section">
+                        <h2>So, Is a Website Worth It?</h2>
+                        <p>
+                            Let's cut to the chase: <strong>Yes, absolutely.</strong>
+                        </p>
+                        <p>
+                            A website is not an expense—it's an investment. It works for you 24/7, bringing in customers
+                            while you sleep. It builds trust, improves your visibility on Google, and gives you full
+                            control over your online presence.
+                        </p>
+                        <p>
+                            Social media is great for engagement and staying connected with existing customers. But when
+                            it comes to attracting new customers, building credibility, and actually growing your
+                            business? You need a website.
+                        </p>
+                        <p>
+                            The businesses that thrive in 2026 are the ones that understand this. They use social media
+                            to create buzz and build community, but they drive people to their website where the real
+                            conversion happens.
+                        </p>
+                        <p>
+                            If you're a local business owner still on the fence about getting a website, ask yourself
+                            this: Can you afford to lose customers to competitors who look more professional and
+                            trustworthy online? Because that's what's happening every day you don't have one.
+                        </p>
+                    </section>
+
+                    <!-- Related Articles -->
+                    <section class="related-articles">
+                        <h2 class="related-articles-title">Related Articles</h2>
+                        <div class="related-articles-grid">
+                            <article class="related-article-card">
+                                <span class="related-article-category">Website Development</span>
+                                <h3 class="related-article-title">
+                                    <a href="custom-website-vs-wordpress.html">
+                                        Custom Website vs WordPress – What's Better for Small Businesses?
+                                    </a>
+                                </h3>
+                            </article>
+                        </div>
+                    </section>
+
+                </div>
+            </div>
+        </article>
+
+        <!-- Blog CTA Section -->
+        <section class="blog-cta-section">
+            <div class="container">
+                <div class="blog-cta-content">
+                    <h2 class="blog-cta-title">Planning a Website for Your Local Business?</h2>
+                    <p class="blog-cta-description">
+                        Webotrex builds fast, modern, and SEO-ready websites designed to convert visitors into
+                        customers.
+                        We specialize in creating professional websites for local businesses across Coastal Karnataka.
+                    </p>
+                    <div class="blog-cta-buttons">
+                        <a href="../contact.html" class="btn btn-primary btn-lg">Get Started Today</a>
+                        <a href="https://wa.me/918217358117?text=Hi%2C%20I%27m%20interested%20in%20getting%20a%20website%20for%20my%20business"
+                            class="btn btn-secondary btn-lg" target="_blank">WhatsApp Us</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="footer-main">
+            <div class="container">
+                <div class="footer-content">
+                    <!-- Brand Column -->
+                    <div class="footer-col footer-col-brand">
+                        <a href="../index.html" class="footer-logo">
+                            <img src="../assets/images/Webotrex-logo-transparent.png" alt="Webotrex">
+                        </a>
+                        <p class="footer-tagline">Building digital excellence for businesses across Coastal Karnataka
+                        </p>
+                        <div class="footer-social">
+                            <a href="#" class="social-icon" aria-label="Instagram">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path
+                                        d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2m-.2 2A3.6 3.6 0 0 0 4 7.6v8.8C4 18.39 5.61 20 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6C20 5.61 18.39 4 16.4 4H7.6m9.65 1.5a1.25 1.25 0 0 1 1.25 1.25A1.25 1.25 0 0 1 17.25 8 1.25 1.25 0 0 1 16 6.75a1.25 1.25 0 0 1 1.25-1.25M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3z" />
+                                </svg>
+                            </a>
+                            <a href="#" class="social-icon" aria-label="LinkedIn">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path
+                                        d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+                                </svg>
+                            </a>
+                            <a href="#" class="social-icon" aria-label="Twitter">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path
+                                        d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+                                </svg>
+                            </a>
+                            <a href="#" class="social-icon" aria-label="Facebook">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path
+                                        d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Quick Links -->
+                    <div class="footer-col">
+                        <h3 class="footer-title">Company</h3>
+                        <ul class="footer-list">
+                            <li><a href="../index.html">Home</a></li>
+                            <li><a href="../about.html">About Us</a></li>
+                            <li><a href="../index.html#services">Services</a></li>
+                            <li><a href="../blog.html">Blog</a></li>
+                            <li><a href="../contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Services -->
+                    <div class="footer-col">
+                        <h3 class="footer-title">Services</h3>
+                        <ul class="footer-list">
+                            <li><a href="../pages/web-development.html">Web Development</a></li>
+                            <li><a href="../pages/web-design.html">Web Design</a></li>
+                            <li><a href="../pages/ui-ux.html">UI/UX Design</a></li>
+                            <li><a href="../pages/e-commerce.html">E-Commerce</a></li>
+                            <li><a href="../pages/seo.html">SEO Services</a></li>
+                            <li><a href="../pages/hosting-domain.html">Hosting & Domain</a></li>
+                            <li><a href="../pages/corporate-website.html">Corporate Website</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Contact Info -->
+                    <div class="footer-col">
+                        <h3 class="footer-title">Contact</h3>
+                        <ul class="footer-contact-list">
+                            <li>
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                                </svg>
+                                <span>Kundapura, Udupi<br>Karnataka 576217</span>
+                            </li>
+                            <li>
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                                </svg>
+                                <a href="tel:+918217358117">+91 8217358117</a>
+                            </li>
+                            <li>
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                                </svg>
+                                <a href="mailto:webotrexsolutions@gmail.com">webotrexsolutions@gmail.com</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer Bottom -->
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="footer-bottom-content">
+                    <p class="footer-copyright">© 2025 Webotrex. All rights reserved.</p>
+                    <div class="footer-legal-links">
+                        <a href="../pages/privacy-policy.html">Privacy Policy</a>
+                        <a href="../pages/terms-of-service.html">Terms of Service</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../assets/js/script.js"></script>
+
+    <!-- AOS Animation Library -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            easing: 'ease-in-out',
+            once: true,
+            offset: 100,
+            delay: 0
+        });
+    </script>
+</body>
+
+</html>

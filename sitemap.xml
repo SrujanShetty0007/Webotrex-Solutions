@@ -101,4 +101,26 @@
         <changefreq>yearly</changefreq>
         <priority>0.3</priority>
     </url>
+    
+    <!-- Blog Pages -->
+    <url>
+        <loc>https://webotrex.netlify.app/blog.html</loc>
+        <lastmod>2025-01-24</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+    <url>
+        <loc>https://webotrex.netlify.app/blog/do-local-businesses-need-a-website-in-2026.html</loc>
+        <lastmod>2025-01-24</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    
+    <url>
+        <loc>https://webotrex.netlify.app/blog/custom-website-vs-wordpress.html</loc>
+        <lastmod>2025-01-24</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
 </urlset>

@@ -44,6 +44,11 @@
     box-sizing: border-box;
 }
 
+html {
+    overflow-x: hidden;
+    width: 100%;
+}
+
 body {
     font-family: var(--font-sans);
     color: var(--slate-900);
@@ -51,6 +56,16 @@ body {
     line-height: 1.6;
     -webkit-font-smoothing: antialiased;
     letter-spacing: -0.01em;
+    overflow-x: hidden;
+    width: 100%;
+    position: relative;
+    padding-top: 70px;
+}
+
+@media (min-width: 768px) {
+    body {
+        padding-top: 75px;
+    }
 }
 
 h1,
@@ -68,6 +83,11 @@ img {
     max-width: 100%;
     height: auto;
     display: block;
+}
+
+section {
+    overflow-x: hidden;
+    width: 100%;
 }
 
 a {
@@ -89,6 +109,13 @@ button {
     max-width: var(--container-max-width);
     margin: 0 auto;
     padding: 0 1.5rem;
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 0 1rem;
+    }
 }
 
 .hidden {
@@ -111,14 +138,17 @@ button {
    Header & Navigation
    ====================== */
 .header {
-    position: sticky;
+    position: fixed;
     top: 0;
-    z-index: 50;
+    left: 0;
+    right: 0;
+    z-index: 100;
     background: rgba(255, 255, 255, 0.95);
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
     border-bottom: 1px solid rgba(226, 232, 240, 0.6);
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    width: 100%;
 }
 
 .header.scrolled {
@@ -316,7 +346,7 @@ button {
     top: 0;
     right: -100%;
     width: 300px;
-    max-width: 80vw;
+    max-width: 85vw;
     height: 100vh;
     background: white;
     z-index: 1000;
@@ -345,6 +375,7 @@ button {
     display: flex;
     align-items: center;
     gap: 0.5rem;
+    pointer-events: none;
 }
 
 .mobile-menu-header .logo {
@@ -386,9 +417,33 @@ button {
 
 .mobile-menu-content {
     flex: 1;
-    padding: 1rem;
+    padding: 0.5rem 1rem 1rem;
     overflow-y: auto;
     -webkit-overflow-scrolling: touch;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+/* Get Started Button at Top */
+.mobile-menu-cta-top {
+    display: block;
+    background: linear-gradient(135deg, var(--brand-primary) 0%, var(--brand-primary-dark) 100%);
+    color: white;
+    text-align: center;
+    padding: 0.875rem 1.25rem;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 0.9375rem;
+    box-shadow: 0 4px 12px -2px rgba(20, 184, 166, 0.35);
+    transition: all 0.3s ease;
+    margin-bottom: 0.5rem;
+}
+
+.mobile-menu-cta-top:hover,
+.mobile-menu-cta-top:active {
+    transform: translateY(-1px);
+    box-shadow: 0 6px 16px -4px rgba(20, 184, 166, 0.45);
 }
 
 .mobile-menu-link {
@@ -399,7 +454,6 @@ button {
     color: var(--slate-800);
     border-radius: 8px;
     transition: all 0.2s ease;
-    margin-bottom: 0.25rem;
 }
 
 .mobile-menu-link:hover,
@@ -409,7 +463,7 @@ button {
 }
 
 .mobile-dropdown {
-    margin: 0.25rem 0;
+    margin: 0;
 }
 
 .mobile-dropdown-btn {
@@ -450,7 +504,7 @@ button {
 
 .mobile-dropdown-menu {
     padding: 0.25rem 0 0.5rem 0.75rem;
-    margin: 0 0 0.25rem 0.5rem;
+    margin: 0 0 0 0.5rem;
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.3s ease;
@@ -458,7 +512,7 @@ button {
 }
 
 .mobile-dropdown-menu:not(.hidden) {
-    max-height: 500px;
+    max-height: 600px;
 }
 
 .mobile-dropdown-item {
@@ -469,7 +523,6 @@ button {
     color: var(--slate-600);
     border-radius: 6px;
     transition: all 0.2s ease;
-    margin-bottom: 0.125rem;
 }
 
 .mobile-dropdown-item:hover,
@@ -478,30 +531,13 @@ button {
     background: rgba(20, 184, 166, 0.06);
 }
 
+/* Remove footer from mobile menu */
 .mobile-menu-footer {
-    padding: 1rem 1.25rem;
-    border-top: 1px solid rgba(0, 0, 0, 0.08);
-    background: var(--slate-50);
-    flex-shrink: 0;
+    display: none;
 }
 
 .mobile-menu-cta {
-    display: block;
-    background: linear-gradient(135deg, var(--brand-primary) 0%, var(--brand-primary-dark) 100%);
-    color: white;
-    text-align: center;
-    padding: 0.875rem 1.25rem;
-    border-radius: 8px;
-    font-weight: 600;
-    font-size: 0.9375rem;
-    box-shadow: 0 4px 12px -2px rgba(20, 184, 166, 0.35);
-    transition: all 0.3s ease;
-}
-
-.mobile-menu-cta:hover,
-.mobile-menu-cta:active {
-    transform: translateY(-1px);
-    box-shadow: 0 6px 16px -4px rgba(20, 184, 166, 0.45);
+    display: none;
 }
 
 /* Sidebar Overlay */
@@ -536,6 +572,20 @@ button {
     text-align: center;
     border: none;
     cursor: pointer;
+    max-width: 100%;
+    white-space: nowrap;
+}
+
+@media (max-width: 480px) {
+    .btn {
+        padding: 0.75rem 1.25rem;
+        font-size: 0.875rem;
+        white-space: normal;
+    }
+
+    .btn-lg {
+        padding: 0.875rem 1.5rem;
+    }
 }
 
 .btn-primary {
@@ -735,7 +785,14 @@ button {
     animation: fadeIn 1s ease-out;
     max-width: 90rem;
     margin: 0 auto;
-    padding: 0 2rem;
+    padding: 0 1rem;
+    width: 100%;
+}
+
+@media (min-width: 768px) {
+    .hero-content {
+        padding: 0 2rem;
+    }
 }
 
 .hero-badge {
@@ -766,6 +823,8 @@ button {
     margin-right: auto;
     text-shadow: 0 2px 15px rgba(0, 0, 0, 0.4), 0 1px 3px rgba(0, 0, 0, 0.5);
     animation: fadeInUp 0.8s ease-out 0.4s both;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
 }
 
 .hero-description {
@@ -776,6 +835,8 @@ button {
     line-height: 1.6;
     text-shadow: 0 1px 6px rgba(0, 0, 0, 0.3);
     animation: fadeInUp 0.8s ease-out 0.6s both;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
 }
 
 .hero-buttons {
@@ -784,6 +845,15 @@ button {
     align-items: center;
     justify-content: center;
     gap: 1rem;
+    width: 100%;
+    max-width: 100%;
+}
+
+@media (min-width: 640px) {
+    .hero-buttons {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
 }
 
 .hero-buttons .btn:first-child {
@@ -876,6 +946,14 @@ button {
     grid-template-columns: 1fr;
     gap: 1.5rem;
     margin-bottom: 3rem;
+    width: 100%;
+    max-width: 100%;
+}
+
+@media (max-width: 768px) {
+    .services-grid {
+        gap: 1.25rem;
+    }
 }
 
 .service-card {
@@ -886,6 +964,14 @@ button {
     transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
     position: relative;
     overflow: hidden;
+    width: 100%;
+    max-width: 100%;
+}
+
+@media (max-width: 768px) {
+    .service-card {
+        padding: 1.5rem;
+    }
 }
 
 .service-card::before {
