@@ -35,7 +35,7 @@
     left: 0;
     right: 0;
     height: 3px;
-    background: linear-gradient(90deg, #059669, #10b981);
+    background: linear-gradient(90deg, #14B8A6, #2DD4BF);
     transform: scaleX(0);
     transform-origin: left;
     transition: transform 0.4s ease;
@@ -64,14 +64,14 @@
 }
 
 .benefit-card:hover .benefit-icon {
-    background: linear-gradient(135deg, #059669, #10b981);
+    background: linear-gradient(135deg, #14B8A6, #2DD4BF);
     transform: scale(1.1) rotate(-5deg);
 }
 
 .benefit-icon svg {
     width: 1.75rem;
     height: 1.75rem;
-    color: #059669;
+    color: #14B8A6;
     transition: color 0.4s ease;
 }
 
@@ -124,7 +124,7 @@
 }
 
 .text-brand {
-    color: #059669;
+    color: #14B8A6;
 }
 
 /* Service Block */
@@ -241,7 +241,7 @@
 }
 
 .learn-more:hover {
-    color: #059669;
+    color: #14B8A6;
     gap: 0.5rem;
 }
 
@@ -273,7 +273,7 @@
 
 /* CTA Section */
 .cta-section {
-    background: linear-gradient(135deg, #059669 0%, #047857 100%);
+    background: linear-gradient(135deg, #14B8A6 0%, #0D9488 100%);
     color: white;
     padding: 6rem 0;
     position: relative;
@@ -305,7 +305,7 @@
     right: -100px;
     width: 350px;
     height: 350px;
-    background-color: #10b981;
+    background-color: #2DD4BF;
 }
 
 .cta-content {
@@ -331,7 +331,7 @@
 
 .btn-white-large {
     background-color: white;
-    color: #059669;
+    color: #14B8A6;
     font-weight: 700;
     padding: 1.125rem 2.5rem;
     font-size: 1.0625rem;

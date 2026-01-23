@@ -32,7 +32,7 @@
 }
 
 .text-brand {
-    color: #059669;
+    color: #14B8A6;
 }
 
 /* Service Block */
@@ -72,7 +72,7 @@
 }
 
 .card-green {
-    background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+    background: linear-gradient(135deg, #2DD4BF 0%, #14B8A6 100%);
 }
 
 .card-blue {
@@ -149,13 +149,13 @@
 }
 
 .learn-more:hover {
-    color: #059669;
+    color: #14B8A6;
     gap: 0.5rem;
 }
 
 /* CTA Section */
 .cta-section {
-    background: linear-gradient(135deg, #059669 0%, #047857 100%);
+    background: linear-gradient(135deg, #14B8A6 0%, #0D9488 100%);
     color: white;
     padding: 6rem 0;
     position: relative;
@@ -187,7 +187,7 @@
     right: -100px;
     width: 350px;
     height: 350px;
-    background-color: #10b981;
+    background-color: #2DD4BF;
 }
 
 .cta-content {
@@ -221,7 +221,7 @@
 
 .btn-white {
     background-color: white;
-    color: #059669;
+    color: #14B8A6;
     font-weight: 700;
     padding: 1rem 2rem;
     border-radius: 0.75rem;

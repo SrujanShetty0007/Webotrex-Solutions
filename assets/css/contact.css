@@ -50,7 +50,7 @@
     left: 0;
     right: 0;
     height: 4px;
-    background: linear-gradient(90deg, #059669, #10b981, #06b6d4);
+    background: linear-gradient(90deg, #14B8A6, #2DD4BF, #06b6d4);
 }
 
 .contact-form-title {
@@ -58,7 +58,7 @@
     font-weight: 800;
     color: #0f172a;
     margin-bottom: 0.75rem;
-    background: linear-gradient(135deg, #0f172a 0%, #059669 100%);
+    background: linear-gradient(135deg, #0f172a 0%, #14B8A6 100%);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -114,8 +114,8 @@
 .form-input:focus,
 .form-textarea:focus {
     outline: none;
-    border-color: #059669;
-    box-shadow: 0 0 0 4px rgba(5, 150, 105, 0.1);
+    border-color: #14B8A6;
+    box-shadow: 0 0 0 4px rgba(20, 184, 166, 0.1);
     background: white;
 }
 
@@ -137,7 +137,7 @@
     font-size: 1.125rem;
     font-weight: 700;
     border-radius: 1rem;
-    background: linear-gradient(135deg, #059669 0%, #10b981 100%);
+    background: linear-gradient(135deg, #14B8A6 0%, #2DD4BF 100%);
     color: white;
     border: none;
     cursor: pointer;
@@ -198,7 +198,7 @@
 }
 
 .contact-card-green::before {
-    background: linear-gradient(180deg, #059669, #10b981);
+    background: linear-gradient(180deg, #14B8A6, #2DD4BF);
 }
 
 .contact-card-purple::before {
@@ -215,7 +215,7 @@
 }
 
 .contact-card-dark::before {
-    background: linear-gradient(180deg, #059669, #10b981);
+    background: linear-gradient(180deg, #14B8A6, #2DD4BF);
 }
 
 .contact-card-icon {
@@ -230,7 +230,7 @@
 
 .contact-card-green .contact-card-icon {
     background: linear-gradient(135deg, #ecfdf5, #d1fae5);
-    color: #059669;
+    color: #14B8A6;
 }
 
 .contact-card-purple .contact-card-icon {
@@ -267,7 +267,7 @@
 }
 
 .contact-card-link {
-    color: #059669;
+    color: #14B8A6;
     font-weight: 600;
     font-size: 0.875rem;
     display: inline-flex;
@@ -277,7 +277,7 @@
 }
 
 .contact-card-link:hover {
-    color: #047857;
+    color: #0D9488;
     gap: 0.5rem;
 }
 
@@ -291,7 +291,7 @@
 }
 
 .contact-card-phone:hover {
-    color: #059669;
+    color: #14B8A6;
 }
 
 .contact-card-email {
@@ -304,7 +304,7 @@
 }
 
 .contact-card-email:hover {
-    color: #059669;
+    color: #14B8A6;
 }
 
 .contact-card-hours {
@@ -390,7 +390,7 @@
 
 /* Active Nav Link */
 .nav-link.active {
-    color: #059669;
+    color: #14B8A6;
     font-weight: 600;
     position: relative;
 }
@@ -402,12 +402,12 @@
     left: 0;
     right: 0;
     height: 2px;
-    background: #059669;
+    background: #14B8A6;
     border-radius: 1px;
 }
 
 .mobile-menu-link.active {
-    color: #059669;
+    color: #14B8A6;
     font-weight: 700;
 }
 

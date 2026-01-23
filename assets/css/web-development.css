@@ -37,7 +37,7 @@
     left: 0;
     right: 0;
     height: 3px;
-    background: linear-gradient(90deg, #059669, #10b981);
+    background: linear-gradient(90deg, #14B8A6, #2DD4BF);
     transform: scaleX(0);
     transform-origin: left;
     transition: transform 0.4s ease;
@@ -66,14 +66,14 @@
 }
 
 .benefit-card:hover .benefit-icon {
-    background: linear-gradient(135deg, #059669, #10b981);
+    background: linear-gradient(135deg, #14B8A6, #2DD4BF);
     transform: scale(1.1) rotate(-5deg);
 }
 
 .benefit-icon svg {
     width: 1.75rem;
     height: 1.75rem;
-    color: #059669;
+    color: #14B8A6;
     transition: color 0.4s ease;
 }
 
@@ -152,7 +152,7 @@
 }
 
 .text-brand {
-    color: #059669;
+    color: #14B8A6;
 }
 
 /* Service Block - Alternating Layout */
@@ -214,7 +214,7 @@
 }
 
 .card-green {
-    background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+    background: linear-gradient(135deg, #2DD4BF 0%, #14B8A6 100%);
 }
 
 .card-icon {
@@ -281,7 +281,7 @@
 }
 
 .learn-more:hover {
-    color: #059669;
+    color: #14B8A6;
     gap: 0.5rem;
 }
 
@@ -422,7 +422,7 @@
 .step-icon {
     width: 4rem;
     height: 4rem;
-    background: linear-gradient(135deg, #059669 0%, #10b981 100%);
+    background: linear-gradient(135deg, #14B8A6 0%, #2DD4BF 100%);
     border-radius: 1rem;
     display: flex;
     align-items: center;
@@ -455,7 +455,7 @@
 .step-number {
     font-size: 0.75rem;
     font-weight: 800;
-    color: #059669;
+    color: #14B8A6;
     background: rgba(5, 150, 105, 0.1);
     padding: 0.25rem 0.75rem;
     border-radius: 1rem;
@@ -519,7 +519,7 @@
 
 /* CTA Section */
 .cta-section {
-    background: linear-gradient(135deg, #059669 0%, #047857 100%);
+    background: linear-gradient(135deg, #14B8A6 0%, #0D9488 100%);
     color: white;
     padding: 6rem 0;
     position: relative;
@@ -551,7 +551,7 @@
     right: -100px;
     width: 350px;
     height: 350px;
-    background-color: #10b981;
+    background-color: #2DD4BF;
 }
 
 .cta-content {
@@ -586,7 +586,7 @@
 /* Buttons */
 .btn-white {
     background-color: white;
-    color: #059669;
+    color: #14B8A6;
     font-weight: 700;
     padding: 1rem 2rem;
     border-radius: 0.75rem;
@@ -604,7 +604,7 @@
 
 .btn-white-large {
     background-color: white;
-    color: #059669;
+    color: #14B8A6;
     font-weight: 700;
     padding: 1.125rem 2.5rem;
     font-size: 1.0625rem;

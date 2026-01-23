@@ -30,7 +30,7 @@
     padding: 1.5rem;
     background: white;
     border-radius: 1rem;
-    border-left: 4px solid #059669;
+    border-left: 4px solid #14B8A6;
     box-shadow: 0 4px 6px -1px rgba(0, 0, 0, .05);
     transition: all 0.3s;
 }
@@ -99,7 +99,7 @@
 }
 
 .feature-card:hover::before {
-    background: linear-gradient(135deg, #059669, #10b981);
+    background: linear-gradient(135deg, #14B8A6, #2DD4BF);
     opacity: 1;
 }
 
@@ -135,7 +135,7 @@
 }
 
 .icon-green {
-    background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+    background: linear-gradient(135deg, #2DD4BF 0%, #14B8A6 100%);
     box-shadow: 0 8px 16px rgba(16, 185, 129, 0.3);
 }
 
@@ -177,7 +177,7 @@
 }
 
 .feature-card:hover .feature-title {
-    color: #059669;
+    color: #14B8A6;
 }
 
 .feature-description {
@@ -190,7 +190,7 @@
 /* Stats Section */
 .stats-section {
     padding: 6rem 0;
-    background: linear-gradient(135deg, #059669 0%, #047857 100%);
+    background: linear-gradient(135deg, #14B8A6 0%, #0D9488 100%);
     color: white;
     position: relative;
     overflow: hidden;
@@ -252,7 +252,7 @@
 .stat-number {
     font-size: 3rem;
     font-weight: 900;
-    color: #10b981;
+    color: #2DD4BF;
     margin-bottom: 0.5rem;
     text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
@@ -312,7 +312,7 @@
     left: 0;
     right: 0;
     height: 4px;
-    background: linear-gradient(90deg, #059669, #10b981);
+    background: linear-gradient(90deg, #14B8A6, #2DD4BF);
     border-radius: 1.5rem 1.5rem 0 0;
     transform: scaleX(0);
     transform-origin: left;
@@ -360,7 +360,7 @@
 }
 
 .service-overview-card:hover .service-overview-title {
-    color: #059669;
+    color: #14B8A6;
 }
 
 .service-overview-text {
@@ -380,7 +380,7 @@
    CTA Section
    ====================== */
 .cta-section {
-    background: linear-gradient(to bottom right, var(--brand-green), var(--brand-green-dark));
+    background: linear-gradient(to bottom right, #14B8A6, #0D9488);
     color: white;
     padding: var(--section-padding);
     position: relative;
@@ -474,7 +474,7 @@
 
 /* Active Nav Link */
 .nav-link.active {
-    color: #059669;
+    color: #14B8A6;
     font-weight: 600;
     position: relative;
 }
@@ -486,12 +486,12 @@
     left: 0;
     right: 0;
     height: 2px;
-    background: #059669;
+    background: #14B8A6;
     border-radius: 1px;
 }
 
 .mobile-menu-link.active {
-    color: #059669;
+    color: #14B8A6;
     font-weight: 700;
 }
 

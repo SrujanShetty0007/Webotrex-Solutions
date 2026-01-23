@@ -5,11 +5,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
 
 :root {
-    /* Brand Colors - Modern Premium Palette */
-    --brand-primary: #4F46E5;
-    --brand-primary-dark: #4338CA;
-    --brand-secondary: #7C3AED;
-    --brand-accent: #06B6D4;
+    /* Brand Colors - Modern Teal/Cyan Palette from Logo */
+    --brand-primary: #14B8A6;
+    --brand-primary-dark: #0D9488;
+    --brand-secondary: #06B6D4;
+    --brand-accent: #2DD4BF;
     --brand-deep: #0f172a;
 
     /* Service Card Colors - Refined Premium Tones */
@@ -17,8 +17,8 @@
     --service-pink: #EC4899;
     --service-purple: #8B5CF6;
     --service-cyan: #06B6D4;
-    --service-indigo: #6366F1;
-    --service-violet: #7C3AED;
+    --service-teal: #14B8A6;
+    --service-emerald: #10B981;
 
     /* Neutral Colors */
     --slate-50: #f8fafc;
@@ -189,14 +189,14 @@ button {
     transform: translateX(-50%) scaleX(0);
     width: 1.25rem;
     height: 2px;
-    background: linear-gradient(90deg, var(--brand-primary), var(--brand-secondary));
+    background: linear-gradient(90deg, var(--brand-primary), var(--brand-accent));
     border-radius: 1px;
     transition: transform 0.25s ease;
 }
 
 .nav-link:hover {
     color: var(--brand-primary);
-    background: rgba(79, 70, 229, 0.06);
+    background: rgba(20, 184, 166, 0.06);
 }
 
 .nav-link:hover::after {
@@ -220,7 +220,7 @@ button {
 
 .dropdown-btn:hover {
     color: var(--brand-primary);
-    background: rgba(79, 70, 229, 0.06);
+    background: rgba(20, 184, 166, 0.06);
 }
 
 .dropdown-icon {
@@ -270,7 +270,7 @@ button {
 }
 
 .dropdown-item:hover {
-    background: linear-gradient(135deg, rgba(79, 70, 229, 0.08) 0%, rgba(124, 58, 237, 0.06) 100%);
+    background: linear-gradient(135deg, rgba(20, 184, 166, 0.08) 0%, rgba(6, 182, 212, 0.06) 100%);
     color: var(--brand-primary);
     transform: translateX(4px);
 }
@@ -284,13 +284,13 @@ button {
     font-size: 0.875rem;
     border-radius: 0.75rem;
     background: linear-gradient(135deg, var(--brand-primary) 0%, var(--brand-primary-dark) 100%);
-    box-shadow: 0 4px 12px -2px rgba(79, 70, 229, 0.35);
+    box-shadow: 0 4px 12px -2px rgba(20, 184, 166, 0.35);
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .cta-desktop .btn-primary:hover {
     transform: translateY(-2px);
-    box-shadow: 0 8px 20px -4px rgba(79, 70, 229, 0.45);
+    box-shadow: 0 8px 20px -4px rgba(20, 184, 166, 0.45);
 }
 
 .mobile-menu-btn {
@@ -301,7 +301,7 @@ button {
 }
 
 .mobile-menu-btn:hover {
-    background: rgba(79, 70, 229, 0.08);
+    background: rgba(20, 184, 166, 0.08);
     color: var(--brand-primary);
 }
 
@@ -404,7 +404,7 @@ button {
 
 .mobile-menu-link:hover,
 .mobile-menu-link:active {
-    background: rgba(79, 70, 229, 0.08);
+    background: rgba(20, 184, 166, 0.08);
     color: var(--brand-primary);
 }
 
@@ -431,7 +431,7 @@ button {
 
 .mobile-dropdown-btn:hover,
 .mobile-dropdown-btn:active {
-    background: rgba(79, 70, 229, 0.08);
+    background: rgba(20, 184, 166, 0.08);
     color: var(--brand-primary);
 }
 
@@ -454,7 +454,7 @@ button {
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.3s ease;
-    border-left: 2px solid rgba(79, 70, 229, 0.2);
+    border-left: 2px solid rgba(20, 184, 166, 0.2);
 }
 
 .mobile-dropdown-menu:not(.hidden) {
@@ -475,7 +475,7 @@ button {
 .mobile-dropdown-item:hover,
 .mobile-dropdown-item:active {
     color: var(--brand-primary);
-    background: rgba(79, 70, 229, 0.06);
+    background: rgba(20, 184, 166, 0.06);
 }
 
 .mobile-menu-footer {
@@ -494,14 +494,14 @@ button {
     border-radius: 8px;
     font-weight: 600;
     font-size: 0.9375rem;
-    box-shadow: 0 4px 12px -2px rgba(79, 70, 229, 0.35);
+    box-shadow: 0 4px 12px -2px rgba(20, 184, 166, 0.35);
     transition: all 0.3s ease;
 }
 
 .mobile-menu-cta:hover,
 .mobile-menu-cta:active {
     transform: translateY(-1px);
-    box-shadow: 0 6px 16px -4px rgba(79, 70, 229, 0.45);
+    box-shadow: 0 6px 16px -4px rgba(20, 184, 166, 0.45);
 }
 
 /* Sidebar Overlay */
@@ -558,7 +558,7 @@ button {
 }
 
 .btn-accent:hover {
-    background-color: #0891B2;
+    background-color: #22D3BB;
 }
 
 .btn-secondary {
@@ -600,7 +600,7 @@ button {
 }
 
 .btn-accent-outline {
-    background-color: rgba(6, 182, 212, 0.2);
+    background-color: rgba(45, 212, 191, 0.2);
     border: 2px solid rgba(255, 255, 255, 0.3);
     color: white;
     font-weight: 600;
@@ -609,7 +609,7 @@ button {
 }
 
 .btn-accent-outline:hover {
-    background-color: rgba(6, 182, 212, 0.3);
+    background-color: rgba(45, 212, 191, 0.3);
 }
 
 .btn-lg {
@@ -926,11 +926,11 @@ button {
 }
 
 .service-green {
-    background-color: var(--service-indigo);
+    background-color: var(--service-teal);
 }
 
 .service-orange {
-    background-color: var(--service-violet);
+    background-color: var(--service-emerald);
 }
 
 .service-icon {

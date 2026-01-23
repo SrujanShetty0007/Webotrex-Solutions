@@ -73,7 +73,7 @@
 /* Premium CTA Section Styles */
 
 .cta-section {
-    background: linear-gradient(135deg, #047857 0%, #065f46 100%);
+    background: linear-gradient(135deg, #14B8A6 0%, #0D9488 100%);
     color: white;
     padding: 4rem 0;
     position: relative;
@@ -162,7 +162,7 @@
 /* Premium Button Styles for CTA */
 .btn-white {
     background-color: white;
-    color: #047857;
+    color: #0D9488;
     font-weight: 700;
     padding: 1.125rem 2.5rem;
     font-size: 1.0625rem;
