@@ -34,24 +34,48 @@ mobileServicesBtn?.addEventListener('click', () => {
 
 // Close mobile menu when clicking a link
 mobileMenu?.querySelectorAll('a').forEach(link =>
-    link.addEventListener('click', closeSidebar)
-);
-
-// Smooth scrolling for anchor links
-document.querySelectorAll('a[href^="#"]').forEach(anchor =>
-    anchor.addEventListener('click', e => {
-        e.preventDefault();
-        const target = document.querySelector(anchor.getAttribute('href'));
-        if (target) {
-            target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    link.addEventListener('click', (e) => {
+        // Only close if it's not a dropdown button
+        if (!link.classList.contains('mobile-dropdown-btn')) {
+            closeSidebar();
         }
     })
 );
 
+// Smooth scrolling for anchor links
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        const href = this.getAttribute('href');
+        if (href === '#' || href === '#!') return;
+
+        const target = document.querySelector(href);
+        if (target) {
+            e.preventDefault();
+            const headerOffset = 80;
+            const elementPosition = target.getBoundingClientRect().top;
+            const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+
+            window.scrollTo({
+                top: offsetPosition,
+                behavior: 'smooth'
+            });
+        }
+    });
+});
+
 // Header scroll effect
-window.addEventListener('scroll', () =>
-    header?.classList.toggle('scrolled', window.pageYOffset > 50)
-);
+let lastScroll = 0;
+window.addEventListener('scroll', () => {
+    const currentScroll = window.pageYOffset;
+
+    if (currentScroll > 50) {
+        header?.classList.add('scrolled');
+    } else {
+        header?.classList.remove('scrolled');
+    }
+
+    lastScroll = currentScroll;
+});
 
 // Close sidebar on escape key
 document.addEventListener('keydown', e => {
@@ -59,3 +83,24 @@ document.addEventListener('keydown', e => {
         closeSidebar();
     }
 });
+
+// Prevent body scroll when mobile menu is open
+if (mobileMenu) {
+    const preventScroll = (e) => {
+        if (!mobileMenu.classList.contains('hidden')) {
+            e.preventDefault();
+        }
+    };
+
+    document.addEventListener('touchmove', preventScroll, { passive: false });
+}
+
+// Initialize AOS (Animate On Scroll) if available
+if (typeof AOS !== 'undefined') {
+    AOS.init({
+        duration: 800,
+        easing: 'ease-in-out',
+        once: true,
+        offset: 100
+    });
+}

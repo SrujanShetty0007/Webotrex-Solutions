@@ -33,6 +33,8 @@
     border-left: 4px solid #14B8A6;
     box-shadow: 0 4px 6px -1px rgba(0, 0, 0, .05);
     transition: all 0.3s;
+    text-align: justify;
+    text-justify: inter-word;
 }
 
 .story-text p:hover {
@@ -174,6 +176,7 @@
     color: #0f172a;
     margin-bottom: 0.75rem;
     transition: color 0.3s;
+    text-align: center;
 }
 
 .feature-card:hover .feature-title {
@@ -185,6 +188,8 @@
     line-height: 1.7;
     font-size: 0.9375rem;
     margin: 0;
+    text-align: justify;
+    text-justify: inter-word;
 }
 
 /* Stats Section */
@@ -357,6 +362,7 @@
     color: #0f172a;
     margin-bottom: 0.75rem;
     transition: color 0.3s;
+    text-align: center;
 }
 
 .service-overview-card:hover .service-overview-title {
@@ -368,6 +374,8 @@
     line-height: 1.7;
     font-size: 0.9375rem;
     margin: 0;
+    text-align: justify;
+    text-justify: inter-word;
 }
 
 .services-cta {
@@ -457,6 +465,7 @@
     color: #0f172a;
     margin: 0;
     transition: color 0.3s ease;
+    text-align: center;
 }
 
 .industry-item:hover .industry-name,
