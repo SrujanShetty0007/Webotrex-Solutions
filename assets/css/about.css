@@ -100,15 +100,10 @@
     transition: opacity 0.4s;
 }
 
-.feature-card:hover::before {
-    background: linear-gradient(135deg, #14B8A6, #2DD4BF);
-    opacity: 1;
-}
-
 .feature-card:hover {
-    box-shadow: 0 20px 40px -12px rgba(5, 150, 105, 0.2);
     transform: translateY(-8px);
-    border-color: rgba(5, 150, 105, 0.2);
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.1);
+    border-color: rgba(20, 184, 166, 0.3);
 }
 
 .feature-icon {
@@ -124,9 +119,7 @@
     transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.feature-card:hover .feature-icon {
-    transform: scale(1.1) rotate(-5deg);
-}
+
 
 .feature-icon svg {
     width: 2rem;
@@ -179,9 +172,7 @@
     text-align: center;
 }
 
-.feature-card:hover .feature-title {
-    color: #14B8A6;
-}
+
 
 .feature-description {
     color: #64748b;
@@ -198,7 +189,6 @@
     background: linear-gradient(135deg, #14B8A6 0%, #0D9488 100%);
     color: white;
     position: relative;
-    overflow: hidden;
 }
 
 .stats-section::before {
@@ -391,7 +381,6 @@
     padding: 6rem 0;
     background: linear-gradient(180deg, #ffffff 0%, #f8fafc 50%, #ffffff 100%);
     position: relative;
-    overflow: hidden;
 }
 
 .industries-section::before {
@@ -429,7 +418,9 @@
 
 .industry-item:hover,
 .industry-card:hover {
-    transform: translateY(-4px);
+    transform: translateY(-8px);
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.1);
+    border-color: rgba(20, 184, 166, 0.3);
 }
 
 .industry-icon {
@@ -446,11 +437,7 @@
     box-shadow: 0 8px 16px rgba(20, 184, 166, 0.25);
 }
 
-.industry-item:hover .industry-icon,
-.industry-card:hover .industry-icon {
-    transform: scale(1.1);
-    box-shadow: 0 12px 24px rgba(20, 184, 166, 0.35);
-}
+
 
 .industry-icon svg {
     width: 1.75rem;
@@ -468,10 +455,7 @@
     text-align: center;
 }
 
-.industry-item:hover .industry-name,
-.industry-card:hover .industry-title {
-    color: #14B8A6;
-}
+
 
 .industry-description {
     display: none;
@@ -483,9 +467,8 @@
 .cta-section {
     background: linear-gradient(to bottom right, #14B8A6, #0D9488);
     color: white;
-    padding: var(--section-padding);
+    padding: 2.5rem 0;
     position: relative;
-    overflow: hidden;
 }
 
 .cta-bg-shapes {
