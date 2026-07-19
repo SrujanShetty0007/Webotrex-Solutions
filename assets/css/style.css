@@ -1052,6 +1052,11 @@ button {
     text-align: center;
 }
 
+.about-content .section-title {
+    text-align: left;
+    font-size: 2.5rem;
+}
+
 .about-text {
     display: flex;
     flex-direction: column;
@@ -1093,14 +1098,15 @@ button {
 }
 
 .about-image {
-    width: 100%;
-    max-width: 550px;
+    width: 115%;
+    max-width: 850px;
     height: auto;
     position: relative;
     z-index: 1;
     filter: drop-shadow(0 20px 40px rgba(20, 184, 166, 0.15));
     transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
     animation: float 6s ease-in-out infinite;
+    margin-left: -5%;
 }
 
 .about-image:hover {
@@ -1782,7 +1788,12 @@ button {
     }
 
     .about-grid {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: 0.9fr 1.1fr;
+        gap: 3rem;
+    }
+
+    .about-content .section-title {
+        font-size: 3.5rem;
     }
 
     .about-visual {
