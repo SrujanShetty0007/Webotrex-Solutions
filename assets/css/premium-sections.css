@@ -14,12 +14,19 @@
 }
 
 .section-title {
-    font-size: 2.25rem;
+    font-size: 2rem;
     font-weight: 800;
     color: var(--slate-900);
     margin-bottom: 0.75rem;
     letter-spacing: -0.03em;
     font-family: var(--font-display);
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    .section-title {
+        font-size: 2.75rem;
+    }
 }
 
 .section-description {
@@ -721,14 +728,25 @@
 }
 
 .why-sticky-left .section-title {
-    text-align: left;
+    text-align: center;
     margin-bottom: 1.5rem;
 }
 
 .why-sticky-left .section-description {
-    text-align: left;
-    margin-left: 0;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
     line-height: 1.8;
+}
+
+@media (min-width: 992px) {
+    .why-sticky-left .section-title {
+        text-align: left;
+    }
+    .why-sticky-left .section-description {
+        text-align: left;
+        margin-left: 0;
+    }
 }
 
 .why-stack {
@@ -823,14 +841,19 @@
     display: inline-block;
 }
 
+.hq-text-wrapper {
+    text-align: center;
+}
+
 .hq-title {
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-weight: 800;
     line-height: 1.2;
     color: var(--slate-900);
     margin-bottom: 1.25rem;
     letter-spacing: -0.03em;
     font-family: var(--font-display);
+    text-align: center;
 }
 
 .hq-title span.brand-highlight {
@@ -842,6 +865,25 @@
     color: var(--slate-600);
     line-height: 1.7;
     margin-bottom: 2rem;
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    .hq-title {
+        font-size: 2.75rem;
+    }
+}
+
+@media (min-width: 992px) {
+    .hq-text-wrapper {
+        text-align: left;
+    }
+    .hq-title {
+        text-align: left;
+    }
+    .hq-description {
+        text-align: left;
+    }
 }
 
 .hq-card {

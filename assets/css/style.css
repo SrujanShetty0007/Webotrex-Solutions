@@ -438,9 +438,9 @@ button {
     left: 50%;
     transform: translateX(-50%) translateY(8px);
     margin-top: 0.5rem;
-    width: 38rem;
+    width: 56rem;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 0.25rem;
     background: rgba(255, 255, 255, 0.98);
     backdrop-filter: blur(20px);
@@ -1096,7 +1096,7 @@ button {
 }
 
 .about-content .section-title {
-    text-align: left;
+    text-align: center;
     font-size: 2rem;
 }
 
@@ -1837,7 +1837,8 @@ button {
     }
 
     .about-content .section-title {
-        font-size: 2.5rem;
+        font-size: 2.75rem;
+        text-align: left;
     }
 
     .about-visual {
@@ -2472,4 +2473,21 @@ body::-webkit-scrollbar {
 body {
     -ms-overflow-style: none; /* IE and Edge */
     scrollbar-width: none; /* Firefox */
+}
+
+.dropdown-category {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.dropdown-category-title {
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--slate-400);
+    letter-spacing: 0.05em;
+    padding: 0.5rem 1rem;
+    margin-bottom: 0.25rem;
+    font-family: var(--font-sans);
 }
