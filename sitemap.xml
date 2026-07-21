@@ -82,9 +82,38 @@
     
     <url>
         <loc>https://webotrex.com/pages/startups.html</loc>
-        <lastmod>2026-02-25</lastmod>
+        <lastmod>2026-07-21</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
+    </url>
+    
+    <!-- Regional Local SEO Landing Pages -->
+    <url>
+        <loc>https://webotrex.com/pages/website-designer-udupi.html</loc>
+        <lastmod>2026-07-21</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.95</priority>
+    </url>
+
+    <url>
+        <loc>https://webotrex.com/pages/software-company-mangalore.html</loc>
+        <lastmod>2026-07-21</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.95</priority>
+    </url>
+
+    <url>
+        <loc>https://webotrex.com/pages/web-development-kundapura.html</loc>
+        <lastmod>2026-07-21</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.95</priority>
+    </url>
+
+    <url>
+        <loc>https://webotrex.com/pages/software-development-udupi-mangalore-kundapura.html</loc>
+        <lastmod>2026-07-21</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.95</priority>
     </url>
     
     <!-- Legal Pages -->

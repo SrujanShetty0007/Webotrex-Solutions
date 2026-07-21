@@ -2198,3 +2198,131 @@ button {
     font-style: italic;
     margin: 0;
 }
+
+/* ======================
+   Regional SEO Hub & Mobile Responsiveness
+   ====================== */
+.seo-hub-section {
+    background: linear-gradient(180deg, rgba(15, 23, 42, 0.95) 0%, rgba(11, 17, 32, 0.98) 100%);
+    padding: 5rem 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.06);
+    position: relative;
+    z-index: 5;
+}
+
+.seo-hub-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.75rem;
+    margin-bottom: 3rem;
+}
+
+.seo-hub-card {
+    background: rgba(30, 41, 59, 0.5);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 1rem;
+    padding: 2rem;
+    backdrop-filter: blur(12px);
+    transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.seo-hub-card:hover {
+    transform: translateY(-4px);
+    border-color: rgba(16, 185, 129, 0.3);
+    box-shadow: 0 12px 30px -10px rgba(16, 185, 129, 0.15);
+}
+
+.seo-hub-card h3 {
+    color: #38bdf8;
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-bottom: 0.75rem;
+}
+
+.seo-hub-card p {
+    font-size: 0.95rem;
+    line-height: 1.65;
+    margin-bottom: 1.25rem;
+    color: #cbd5e1;
+}
+
+.seo-hub-link {
+    color: #10b981;
+    font-weight: 600;
+    font-size: 0.9375rem;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    transition: gap 0.2s ease, color 0.2s ease;
+}
+
+.seo-hub-link:hover {
+    gap: 0.6rem;
+    color: #34d399;
+}
+
+.seo-tag-matrix {
+    background: rgba(15, 23, 42, 0.75);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 1rem;
+    padding: 2rem;
+}
+
+.seo-tag-matrix h4 {
+    color: #f8fafc;
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.seo-tag-chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6rem;
+}
+
+.seo-tag-chip {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    padding: 0.4rem 0.85rem;
+    border-radius: 8px;
+    color: #cbd5e1;
+    font-size: 0.85rem;
+    transition: background 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+}
+
+.seo-tag-chip:hover {
+    background: rgba(16, 185, 129, 0.12);
+    border-color: rgba(16, 185, 129, 0.3);
+    color: #34d399;
+}
+
+/* Mobile Responsive Adjustments */
+@media (max-width: 768px) {
+    .seo-hub-section {
+        padding: 3.5rem 0;
+    }
+    
+    .seo-hub-grid {
+        grid-template-columns: 1fr;
+        gap: 1.25rem;
+    }
+    
+    .seo-hub-card {
+        padding: 1.5rem;
+    }
+    
+    .cta-buttons {
+        flex-direction: column;
+        width: 100%;
+        gap: 0.875rem;
+    }
+    
+    .cta-buttons .btn {
+        width: 100%;
+        text-align: center;
+        justify-content: center;
+    }
+}
+
